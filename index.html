@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빌드업교회 | 말씀 안에 함께 세워져가는 교회</title>
+    <!-- Tailwind CSS (디자인 프레임워크) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 폰트: 넥슨 고딕 (가독성이 좋고 깔끔함) -->
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <style>
+        body { font-family: 'NexonLv1Gothic', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2073&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 네비게이션 바 -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold text-indigo-900">빌드업교회</a>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="#about" class="hover:text-indigo-600 transition">인사말</a>
+                    <a href="#vision" class="hover:text-indigo-600 transition">목회철학</a>
+                    <a href="#worship" class="hover:text-indigo-600 transition">예배안내</a>
+                    <a href="#location" class="hover:text-indigo-600 transition">오시는길</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 히어로 섹션 -->
+    <header class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4">
+        <h2 class="text-white text-xl md:text-2xl mb-4 font-light tracking-widest">말씀 안에 함께 세워져가는 교회</h2>
+        <h1 class="text-white text-5xl md:text-7xl font-bold mb-8">빌드업교회</h1>
+        <a href="#about" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-medium hover:bg-indigo-700 transition">
+            환영합니다
+        </a>
+    </header>
+
+    <!-- 인사말 섹션 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-gray-900 mb-8">담임목사 인사말</h3>
+            <div class="w-24 h-1 bg-indigo-600 mx-auto mb-8"></div>
+            <p class="text-lg leading-relaxed text-gray-700 text-justify md:text-center break-keep">
+                "안녕하세요. 빌드업교회를 섬기는 황성현 목사입니다.<br><br>
+                한 사람의 삶이 예수 그리스도의 사랑 안에서 온전하게 세워지는 과정은 세상 그 어떤 것보다 아름답습니다. 저는 영혼을 살리는 목회자이자, 마음을 돌보고 다음 세대의 건강한 성장을 돕는 안내자로서의 부르심을 안고 나아갑니다.<br><br>
+                빌드업교회가 여러분의 삶과 가정, 그리고 우리 아이들의 미래를 든든하게 세워가는 따뜻한 영적 안식처가 되기를 소망합니다."
+            </p>
+        </div>
+    </section>
+
+    <!-- 비전 섹션 -->
+    <section id="vision" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">목회 철학 및 비전</h3>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 비전 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mb-6">1</div>
+                    <h4 class="text-xl font-bold mb-4">말씀의 깊은 묵상과 내면화</h4>
+                    <p class="text-gray-600 leading-relaxed break-keep">단순히 성경 지식을 쌓는 것을 넘어, '슬로리딩(Slow Reading)'처럼 말씀을 천천히, 깊이 있게 읽고 묵상하여 성도들의 삶 속에 진리가 온전히 뿌리내리도록 돕습니다.</p>
+                </div>
+                <!-- 비전 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mb-6">2</div>
+                    <h4 class="text-xl font-bold mb-4">전인격적인 치유와 회복</h4>
+                    <p class="text-gray-600 leading-relaxed break-keep">현대인의 지친 마음과 영혼을 어루만지며, 영적 성숙뿐만 아니라 정서적, 심리적인 건강까지 함께 돌보는 따뜻한 치유 공동체를 지향합니다.</p>
+                </div>
+                <!-- 비전 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mb-6">3</div>
+                    <h4 class="text-xl font-bold mb-4">다음 세대를 세우는 공동체</h4>
+                    <p class="text-gray-600 leading-relaxed break-keep">올바른 가치관과 사회성을 갖춘 청소년과 청년들을 양육하며, 다음 세대가 세상 속에서 선한 영향력을 발휘하는 리더로 '빌드업' 될 수 있도록 교육하고 멘토링합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 예배 안내 섹션 -->
+    <section id="worship" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-gray-900 mb-8">예배 안내</h3>
+            <div class="w-24 h-1 bg-indigo-600 mx-auto mb-12"></div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-sm flex flex-col md:flex-row justify-center gap-12">
+                <div class="text-center">
+                    <h4 class="text-2xl font-bold text-indigo-900 mb-2">주일 예배</h4>
+                    <p class="text-xl text-gray-700">오전 11:00</p>
+                </div>
+                <div class="hidden md:block w-px bg-gray-300"></div>
+                <div class="text-center">
+                    <h4 class="text-2xl font-bold text-indigo-900 mb-2">금요 성경모임</h4>
+                    <p class="text-xl text-gray-700">오후 7:30</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 오시는 길 & 상담 (지도 및 카카오톡) -->
+    <section id="location" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">오시는 길 및 상담안내</h3>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- 텍스트 정보 및 카카오톡 버튼 -->
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-900">주소</h4>
+                        <p class="text-gray-700 text-lg">인천시 서구 청마로167번길 3, 대우프라자 3층 302호</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">상담 및 문의</h4>
+                        <p class="text-gray-600 mb-4">예배 안내나 신앙 상담이 필요하신 분은 카카오톡 채널로 편하게 연락주세요.</p>
+                        <!-- 카카오톡 채널 링크 (여기에 실제 URL을 넣으세요) -->
+                        <a href="http://pf.kakao.com/_여기에아이디입력" target="_blank" class="inline-flex items-center justify-center bg-[#FEE500] text-[#000000] font-bold py-3 px-6 rounded-lg shadow-sm hover:bg-[#E5CF00] transition">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-5.52 0-10 3.52-10 7.85 0 2.8 1.83 5.25 4.67 6.64-.32 1.1-.98 3.42-1.01 3.54-.1.35.12.35.25.26.1-.08 3.03-2 4.23-2.83.6.1 1.22.15 1.86.15 5.52 0 10-3.52 10-7.85S17.52 3 12 3z"/></svg>
+                            카카오톡 채널 상담하기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 네이버 지도 들어갈 자리 -->
+                <div class="bg-gray-200 w-full h-80 rounded-xl overflow-hidden shadow-inner flex items-center justify-center text-gray-500">
+                    <!-- 네이버 지도 공유하기 -> HTML 태그 복사해서 이곳에 붙여넣기 하시면 됩니다. -->
+                    <p class="text-sm text-center px-4">
+                        네이버 지도에서 '빌드업교회' 주소 검색 후<br>
+                        [공유] - [HTML 태그 복사]를 통해 코드를 여기에 붙여넣으세요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-2">빌드업교회</h2>
+            <p class="mb-4">기독교대한성결교회 | 담임목사 황성현</p>
+            <p>인천시 서구 청마로167번길 3, 대우프라자 3층 302호</p>
+            <p class="mt-8 text-gray-600">© 2026 Build-Up Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
