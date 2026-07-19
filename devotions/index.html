@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주간 묵상 아카이브 | 빌드업교회</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 폰트: 넥슨 고딕 -->
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <style>
+        body { font-family: 'NexonLv1Gothic', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2073&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+        }
+        .wood-gradient { background: linear-gradient(135deg, #7b5e43 0%, #5a402a 100%); }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- 네비게이션 바 -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="../index.html" class="text-2xl font-bold text-indigo-900">빌드업교회</a>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="../index.html#about" class="hover:text-indigo-600 transition">교회 소개</a>
+                    <a href="../index.html#worship" class="hover:text-indigo-600 transition">예배와 말씀</a>
+                    <a href="../index.html#education" class="hover:text-indigo-600 transition">교육과 훈련</a>
+                    <a href="../index.html#community" class="hover:text-indigo-600 transition">공동체 및 소식</a>
+                    <a href="index.html" class="text-indigo-600 font-bold">주간 묵상</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 서브 헤어로 섹션 -->
+    <header class="hero-bg pt-32 pb-16 text-center px-4 text-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-4 rounded-full bg-indigo-500/30 text-indigo-200 text-sm font-medium mb-3 backdrop-blur-sm border border-indigo-400/30">
+                Word & Life Devotion
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">주간 묵상 아카이브</h1>
+            <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                매주일 선포되는 설교 말씀과 함께 한 주간 삶의 자리에서 말씀을 묵상하고 실천하는 빌드업 묵상 여정입니다.
+            </p>
+        </div>
+    </header>
+
+    <!-- 묵상 아카이브 목록 섹션 -->
+    <main class="max-w-5xl mx-auto px-4 py-12 flex-grow w-full">
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900">최근 주간 묵상</h2>
+                <p class="text-sm text-gray-500 mt-1">원하시는 주차를 선택하여 묵상에 참여해보세요.</p>
+            </div>
+            <span class="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold border border-indigo-100">
+                총 1건의 묵상
+            </span>
+        </div>
+
+        <!-- 묵상 리스트 카드 목록 (신규 주차가 늘어나면 이 영역에 새 카드를 추가) -->
+        <div class="grid gap-6">
+
+            <!-- 2026-07-19 주차 카드 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100 hover:border-indigo-300 transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="space-y-3 flex-grow">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">
+                            <i class="far fa-calendar-alt mr-1"></i> 2026.07.19 (주일)
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+                            창세기 2장 1~3절
+                        </span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 hover:text-indigo-600 transition">
+                        <a href="2026-07-19/index.html">완벽한 통치, 참된 안식</a>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed line-clamp-2">
+                        스스로 증명하려던 몸부림을 멈추고 주님의 헤세드에 안기는 7일의 여정. 하나님의 안식은 피로를 푸는 '휴식'이 아닌 창조의 질서를 다스리시는 '완벽한 통치'입니다.
+                    </p>
+                    <div class="flex items-center gap-4 text-xs text-gray-400 pt-1">
+                        <span><i class="fab fa-youtube text-red-500 mr-1"></i> 주일 설교 영상</span>
+                        <span><i class="fas fa-images text-amber-600 mr-1"></i> 슬라이드 15장</span>
+                        <span><i class="fas fa-calendar-check text-emerald-600 mr-1"></i> 월~주일 묵상</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="2026-07-19/index.html" class="w-full md:w-auto text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 group">
+                        묵상하기 <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- 템플릿 주석: 다음 주 묵상 추가 시 아래 예시 구조를 복사하여 새로운 주차 폴더(예: YYYY-MM-DD)로 연결하십시오. -->
+
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm mt-auto">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-2">빌드업교회</h2>
+            <p class="mb-4">기독교대한성결교회 | 담임목사 황성현</p>
+            <p>인천시 서구 청마로167번길 3, 대우프라자 3층 302호</p>
+            <p class="mt-8 text-gray-600">© 2026 Build-Up Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
