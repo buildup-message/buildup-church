@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주일설교 영상 | 빌드업교회</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2073&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+        }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02); }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.75rem; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- 네비게이션 바 -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="../index.html" class="text-2xl font-bold text-indigo-900">빌드업교회</a>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="../index.html#about" class="hover:text-indigo-600 transition">교회 소개</a>
+                    <a href="../index.html#worship" class="hover:text-indigo-600 transition">예배와 말씀</a>
+                    <a href="../index.html#education" class="hover:text-indigo-600 transition">교육과 훈련</a>
+                    <a href="../index.html#community" class="hover:text-indigo-600 transition">공동체 및 소식</a>
+                    <a href="index.html" class="text-indigo-600 font-bold">주일설교 영상</a>
+                    <a href="../devotions/index.html" class="hover:text-indigo-600 transition">주간 묵상</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 서브 헤어로 섹션 -->
+    <header class="hero-bg pt-32 pb-16 text-center px-4 text-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-4 rounded-full bg-indigo-500/30 text-indigo-200 text-sm font-medium mb-3 backdrop-blur-sm border border-indigo-400/30">
+                Sunday Sermon Archive
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">주일설교 영상</h1>
+            <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                순서대로 이어서 볼 수 있는 빌드업교회 주일설교 영상 모음입니다.
+            </p>
+        </div>
+    </header>
+
+    <!-- 설교 영상 목록 -->
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow w-full">
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900">설교 영상 목록</h2>
+                <p class="text-sm text-gray-500 mt-1">영상이 있는 주일만 오래된 순서대로 정리했습니다.</p>
+            </div>
+            <span class="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold border border-indigo-100">
+                총 5건
+            </span>
+        </div>
+
+        <div class="space-y-10">
+
+            <!-- 2026.06.07 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.06.07</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">혼돈에서 질서로</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 창세기 1:1-5 · 요한복음 1:9-12</p>
+                </div>
+                <div class="video-container shadow-md border border-gray-200">
+                    <iframe src="https://www.youtube-nocookie.com/embed/IzbtZFdJuL8" title="2026.06.07 혼돈에서 질서로" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="../devotions/2026-06-07/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
+
+            <!-- 2026.06.14 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.06.14</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">질서가 세워질 때, 채워지기 시작합니다</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 창세기 1:1-5</p>
+                </div>
+                <div class="video-container shadow-md border border-gray-200">
+                    <iframe src="https://www.youtube-nocookie.com/embed/y2-TZF2agkY" title="2026.06.14 질서가 세워질 때, 채워지기 시작합니다" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="../devotions/2026-06-14/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
+
+            <!-- 2026.06.28 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.06.28</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">열정을 넘어, 헤세드로</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 마태복음 26:31-35, 69-75</p>
+                </div>
+                <div class="video-container shadow-md border border-gray-200">
+                    <iframe src="https://www.youtube-nocookie.com/embed/zALfAmYy_WQ" title="2026.06.28 열정을 넘어, 헤세드로" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="../devotions/2026-06-28/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
+
+            <!-- 2026.07.05 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.07.05</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">완벽한 통치, 참된 안식</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 창세기 2:1-3</p>
+                </div>
+                <div class="video-container shadow-md border border-gray-200">
+                    <iframe src="https://www.youtube-nocookie.com/embed/qxsR1WIdSU8" title="2026.07.05 완벽한 통치, 참된 안식" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="../devotions/2026-07-05/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
+
+            <!-- 2026.07.12 (1부/2부) -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.07.12</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">성경이 말하는 진짜 성공</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 이사야 55:10-11 · 고린도전서 3:14-15</p>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-xs font-bold text-gray-500 mb-2">1부 설교</p>
+                        <div class="video-container shadow-md border border-gray-200">
+                            <iframe src="https://www.youtube-nocookie.com/embed/9JvvDQBKr14" title="2026.07.12 성경이 말하는 진짜 성공 (1부)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-gray-500 mb-2">2부 설교</p>
+                        <div class="video-container shadow-md border border-gray-200">
+                            <iframe src="https://www.youtube-nocookie.com/embed/D0sus9SiGlA" title="2026.07.12 성경이 말하는 진짜 성공 (2부)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <a href="../devotions/2026-07-12/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm mt-auto">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-2">빌드업교회</h2>
+            <p class="mb-4">기독교대한성결교회 | 담임목사 황성현</p>
+            <p>인천시 검단구 청마로167번길 3, 대우프라자 3층 302호</p>
+            <p class="mt-8 text-gray-600">© 2026 Build-Up Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
