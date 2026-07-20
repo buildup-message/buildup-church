@@ -6,6 +6,8 @@
     <title>빌드업교회 | 말씀 안에 함께 세워져가는 교회</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- 폰트: Pretendard -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <style>
@@ -31,12 +33,36 @@
                     <a href="sermons/index.html" class="hover:text-indigo-600 transition">주일설교 영상</a>
                     <a href="devotions/index.html" class="hover:text-indigo-600 transition text-indigo-600">주간 묵상</a>
                 </div>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden text-2xl text-gray-700" aria-label="메뉴 열기">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden flex-col space-y-1 pb-4 text-sm font-semibold border-t border-gray-100 pt-3">
+                <a href="#about" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">교회 소개</a>
+                <a href="#worship" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">예배와 말씀</a>
+                <a href="#education" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">교육과 훈련</a>
+                <a href="#community" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">공동체 및 소식</a>
+                <a href="sermons/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">주일설교 영상</a>
+                <a href="devotions/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition text-indigo-600">주간 묵상</a>
             </div>
         </div>
     </nav>
 
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
+        }
+    </script>
+
     <!-- 메인 히어로 섹션 -->
-    <header class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4">
+    <header class="hero-bg h-[60vh] md:h-screen flex flex-col justify-center items-center text-center px-4">
         <h2 class="text-white text-xl md:text-2xl mb-4 font-light tracking-widest">말씀 안에 함께 세워져가는 교회</h2>
         <h1 class="text-white text-5xl md:text-7xl font-bold mb-8">빌드업교회</h1>
     </header>
