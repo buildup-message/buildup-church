@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빌드업교회 주간묵상 (2026-06-28)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: #fdfbf7;
+            color: #292524;
+            scroll-behavior: smooth;
+        }
+        
+        /* 유틸리티 스타일 */
+        .wood-gradient { background: linear-gradient(135deg, #7b5e43 0%, #5a402a 100%); }
+        .emerald-gradient { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .emerald-light-gradient { background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); }
+        
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(90, 64, 42, 0.08), 0 8px 10px -6px rgba(90, 64, 42, 0.04); }
+        
+        .fade-in { animation: fadeIn 0.4s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .highlight {
+            background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(16, 185, 129, 0.2) 60%);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased pb-12 flex flex-col min-h-screen">
+
+    <!-- 상단 글로벌 네비게이션 -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="../../index.html" class="text-xl font-bold text-indigo-900 flex items-center gap-2">
+                    <span>빌드업교회</span>
+                </a>
+                <div class="flex items-center space-x-4 text-sm font-semibold">
+                    <a href="../index.html" class="text-stone-600 hover:text-indigo-600 transition flex items-center gap-1">
+                        <i class="fas fa-list-ul"></i> 묵상 목록
+                    </a>
+                    <a href="../../index.html" class="text-stone-600 hover:text-indigo-600 transition hidden sm:inline-block">
+                        교회 홈
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 컨테이너 -->
+    <main class="max-w-2xl mx-auto w-full bg-white min-h-screen card-shadow sm:rounded-2xl mt-16 sm:mt-20 overflow-hidden relative flex-grow">
+        
+        <!-- 메인 목록 뷰 -->
+        <div id="home-view" class="block fade-in">
+            <!-- Header -->
+            <header class="wood-gradient text-white p-8 text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+                <div class="relative z-10">
+                    <div class="flex justify-center items-center gap-2 mb-3">
+                        <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-xs font-semibold tracking-wider text-amber-50 backdrop-blur-sm">
+                            2026.07.19 주일 설교 묵상
+                        </span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3 break-keep">
+                        지금도,<br>창조하고 계십니다
+                    </h1>
+                    <p class="text-amber-100/90 text-sm sm:text-base font-light break-keep max-w-lg mx-auto">
+                        스티커 대신 말씀을 붙들고, 혼돈에서 새로운 피조물로 걸어가는 7일의 여정
+                    </p>
+                </div>
+            </header>
+
+            <div class="p-6 sm:p-8 space-y-10">
+                
+                <!-- 주일 설교 영상 및 요약 -->
+                <section class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <i class="fab fa-youtube text-red-500"></i> 주일 설교 다시보기
+                        </h2>
+                    </div>
+                    <div class="video-container shadow-md border border-stone-200 bg-black rounded-xl overflow-hidden relative" style="padding-bottom: 56.25%; height: 0;">
+                    <iframe src="https://www.youtube.com/embed/zALfAmYy_WQ" title="주일 설교 영상" class="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                    <div class="bg-stone-50 p-4 rounded-xl border border-stone-200 text-sm text-stone-600 leading-relaxed break-keep">
+                        <span class="font-bold text-amber-800">설교 요약:</span> 하나님은 혼돈하고 공허하고 캄캄한 그 자리를 떠나지 않으시고 지금도 품고 계십니다. 말씀이 임하면 질서가 서고, 그 순종의 자리에 하나님의 은혜가 채워집니다. 우리는 그렇게 조금씩 새롭게 믿음 안에 세워져 갑니다 — 하루아침이 아니라, 말씀과 순종이 반복되는 과정을 통해서요.
+                    </div>
+                </section>
+
+                <!-- 설교 슬라이드 캐러셀 -->
+                <section class="bg-white rounded-2xl p-6 border border-stone-200/60 shadow-sm relative overflow-hidden">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <i class="fas fa-images text-amber-600"></i> 주일 설교 슬라이드
+                        </h2>
+                        <div id="slide-counter" class="text-xs font-bold px-3 py-1 bg-stone-100 text-stone-600 rounded-full">
+                            1 / 23
+                        </div>
+                    </div>
+                    
+                    <div class="relative w-full aspect-video bg-[#4f4339] rounded-xl overflow-hidden shadow-inner flex items-center justify-center group">
+                        <!-- 슬라이드 이미지 -->
+                        <img id="slide-image" src="slide1.png" class="w-full h-full object-contain transition-opacity duration-200" alt="설교 슬라이드">
+                        
+                        <!-- 왼쪽 화살표 -->
+                        <button onclick="prevSlide()" class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10 shadow-md" aria-label="이전 슬라이드">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <!-- 오른쪽 화살표 -->
+                        <button onclick="nextSlide()" class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10 shadow-md" aria-label="다음 슬라이드">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-stone-400 text-center mt-3"><i class="fas fa-hand-pointer mr-1"></i> 좌우 화살표를 눌러 슬라이드를 넘겨보세요.</p>
+                </section>
+
+                <!-- 매일의 안식 안내 -->
+                <section class="bg-[#fbf9f6] rounded-2xl p-6 border border-stone-200/60">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 rounded-full wood-gradient flex items-center justify-center text-white shadow-sm">
+                            <i class="fas fa-leaf text-sm"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-stone-800">매일 이렇게 새로워지세요</h2>
+                    </div>
+                    <ul class="space-y-4 text-sm text-stone-600">
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>정직한 인정:</strong> 오늘 내 마음의 혼돈·공허·흑암이 무엇인지 숨기지 않고 하나님 앞에 꺼내놓습니다.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>말씀 읽기:</strong> 오늘 주어진 본문과 해설을 천천히 읽으며 주님의 음성을 듣습니다.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>순종 하나:</strong> 마음에 주신 순종할 일을 미루지 않고, 오늘 안에 실제로 행합니다.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>결단과 체크:</strong> 오늘의 결단을 기도로 올려드리고 묵상 완료 체크를 합니다.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 요일별 묵상 리스트 -->
+                <section>
+                    <h2 class="text-xl font-bold text-stone-800 mb-5 pl-2 border-l-4 border-emerald-500">요일별 묵상 여정</h2>
+                    <div class="grid grid-cols-1 gap-3" id="day-list">
+                        <!-- JS로 요일별 카드 동적 생성 -->
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- 개별 요일 묵상 뷰 -->
+        <div id="daily-view" class="hidden fade-in bg-white min-h-screen">
+            <!-- Top Nav -->
+            <div class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-100 p-4 flex items-center justify-between shadow-sm">
+                <button onclick="goHome()" class="text-stone-500 hover:text-stone-800 flex items-center gap-2 font-medium transition-colors">
+                    <i class="fas fa-arrow-left"></i> 목록으로
+                </button>
+                <div id="daily-badge" class="text-xs font-bold px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">
+                    월요일
+                </div>
+            </div>
+
+            <div class="p-6 sm:p-8 space-y-8 pb-20">
+                <!-- 제목 영역 -->
+                <div class="text-center space-y-3 mt-4">
+                    <h1 id="daily-title" class="text-2xl sm:text-3xl font-bold text-stone-800 break-keep leading-tight">제목</h1>
+                    <p id="daily-passage-ref" class="text-emerald-600 font-medium"><i class="fas fa-bible mr-1"></i> 성경구절</p>
+                </div>
+
+                <!-- 1. 본문 말씀 -->
+                <div class="bg-[#fbf9f6] rounded-2xl p-6 border-l-4 border-amber-700 shadow-sm relative">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full wood-gradient text-white flex items-center justify-center shadow">
+                        <i class="fas fa-quote-left text-xs"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-stone-500 mb-3">본문 말씀</h3>
+                    <p id="daily-passage-text" class="text-stone-800 text-lg leading-relaxed break-keep font-serif"></p>
+                </div>
+
+                <!-- 2. 배경 및 해석 -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                        <i class="fas fa-lightbulb text-amber-600"></i> 말씀의 배경과 해석
+                    </h3>
+                    <div class="bg-white border border-stone-200 rounded-xl p-5 text-stone-600 leading-relaxed text-sm break-keep space-y-4">
+                        <p id="daily-background"></p>
+                        <hr class="border-stone-100">
+                        <p id="daily-interpretation"></p>
+                    </div>
+                </div>
+
+                <!-- 2.5 묵상을 돕는 이야기 -->
+                <div class="bg-amber-50/60 rounded-2xl p-6 border border-amber-200/60 shadow-sm relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 text-amber-500/10 text-6xl">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-md font-bold text-amber-800 mb-3 flex items-center gap-2 relative z-10">
+                        <i class="fas fa-seedling text-amber-600"></i> 묵상을 돕는 이야기
+                    </h3>
+                    <p id="daily-illustration" class="text-stone-700 leading-relaxed text-sm break-keep relative z-10 font-medium"></p>
+                </div>
+
+                
+                    <h3 class="text-md font-bold text-slate-800 mb-3 flex items-center gap-2 relative z-10">
+                        <i class="fas fa-landmark text-slate-600"></i> 실화 이야기
+                    </h3>
+                    <p id="daily-realstory" class="text-stone-700 leading-relaxed text-sm break-keep relative z-10 font-medium"></p>
+                </div>
+
+                <!-- 3. 깊은 묵상 질문 -->
+                <div class="emerald-light-gradient rounded-2xl p-6 border border-emerald-200 shadow-inner">
+                    <h3 class="text-lg font-bold text-emerald-800 mb-4 flex items-center gap-2">
+                        <i class="fas fa-water text-emerald-600"></i> 깊은 곳으로 던지는 질문
+                    </h3>
+                    <p id="daily-question" class="text-emerald-900 font-medium text-lg leading-relaxed break-keep text-center py-4 italic"></p>
+                </div>
+
+                <!-- 4. 핵심 요약 -->
+                <div class="flex flex-col items-center justify-center text-center p-6 bg-stone-50 rounded-2xl border border-stone-200 border-dashed">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mb-3">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-stone-500 mb-2">오늘의 묵상 요약</h3>
+                    <p id="daily-summary" class="text-stone-800 font-bold break-keep highlight inline"></p>
+                </div>
+
+                <!-- 5. 결단 및 기도 -->
+                <div class="wood-gradient rounded-2xl p-6 text-amber-50 shadow-md">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-hands-praying text-amber-200"></i> 안식을 누리는 결단과 기도
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white/10 rounded-lg p-4 border border-white/20">
+                            <h4 class="text-amber-200 text-xs font-bold mb-1">오늘의 실천(Check)</h4>
+                            <p id="daily-action" class="text-sm leading-relaxed break-keep"></p>
+                        </div>
+                        <div class="bg-white/10 rounded-lg p-4 border border-white/20">
+                            <h4 class="text-amber-200 text-xs font-bold mb-1">오늘의 기도</h4>
+                            <p id="daily-prayer" class="text-sm leading-relaxed break-keep"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 완료 버튼 -->
+                <button onclick="markAsCompleted()" id="btn-complete" class="w-full py-4 rounded-xl font-bold text-lg transition-all shadow-md flex items-center justify-center gap-2 emerald-gradient text-white hover:opacity-90">
+                    <i class="fas fa-check-circle"></i> 오늘의 묵상 완료하기
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-auto">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-lg font-bold text-white mb-1">빌드업교회</h2>
+            <p class="text-xs text-gray-500">© 2026 Build-Up Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 이 주차의 묵상 데이터 (재사용 가능한 패턴)
+        const DEVOTION_KEY = 'buildup_devotion_completed_2026_07_19';
+        
+        const devotionals = [
+            {
+                        "day": "월",
+                        "title": "주도적 사랑 ('먼저' 찾아오심)",
+                        "passageRef": "요한일서 4:10, 19",
+                        "passageText": "\"사랑은 여기 있으니 우리가 하나님을 사랑한 것이 아니요 하나님이 우리를 사랑하사... 우리가 사랑함은 그가 먼저 우리를 사랑하셨음이라\"",
+                        "background": "사도 요한은 이방 철학(영지주의)의 거짓 가르침에 흔들리는 초대 교회 성도들에게 이 편지를 썼습니다. 요한은 '사랑의 본질'이 인간의 감정이나 종교적 노력에서 시작된 것이 아니라, 우리가 하나님과 원수 되었을 때 하나님께서 먼저 구원의 손길을 내미신 '선제적 행동'에 있음을 강조합니다.",
+                        "interpretation": "맹목적인 열정이나 세상의 사랑은 상대방이 내게 매력을 보여주거나 먼저 다가와 호응해 줄 때 타오르기 시작합니다. 그러나 하나님의 '헤세드'는 우리가 아직 아무 반응도 없고, 심지어 죄 가운데 방황하고 있을 때 일방적으로 건너와 품어주시는 주도적 사랑입니다. 우리가 하나님을 알기도 전에, 찾기도 전에 하나님이 먼저 우리를 찾으셨습니다. 내 삶의 걸음걸음은 내가 개척한 것 같지만, 실은 나를 먼저 찾아오신 하나님의 치밀하고도 은혜로운 '추적'의 결과입니다.",
+                        "illustration": "\"복잡한 놀이공원에서 부모의 손을 놓친 어린아이를 생각해 보십시오. 아이는 길을 잃은 줄도 모르고 장난감에 정신이 팔려 있거나, 뒤늦게 깨닫고 두려움에 울고만 있습니다. 아이가 부모를 찾아가는 것이 아닙니다. 부모가 사색이 되어 인파를 헤치고 달려가 아이를 먼저 찾아내어 와락 끌어안습니다. 이것이 바로 우리를 향한 하나님의 주도적인 사랑입니다.\"",
+                        "question": "내 인생을 돌아볼 때, 내가 기대하거나 찾지 않았음에도 하나님이 먼저 찾아와 인도해주셨던 은혜의 순간은 언제입니까?",
+                        "summary": "주도적 사랑 ('먼저' 찾아오심)",
+                        "action": "주님이 내게 먼저 다가오셨듯, 오늘 내가 먼저 연락하거나 다가가 손 내밀어 주어야 할 사람은 누구입니까?",
+                        "prayer": "🙏 \"주님, 제가 주님을 알기도 전에 먼저 저를 찾아와 안아주신 그 크신 사랑에 감사합니다. 세상에서 방황하던 저를 먼저 선택해 주셨으니, 오늘 하루 저도 누군가에게 먼저 다가가 따뜻한 사랑을 전하는 자로 살게 하소서. 예수님의 이름으로 기도합니다. 아멘.\""
+            },
+            {
+                        "day": "화",
+                        "title": "영원한 책임 ('끝까지' 사랑)",
+                        "passageRef": "요한복음 13:1",
+                        "passageText": "\"유월절 전에 예수께서 자기가 세상을 떠나 아버지께로 돌아가실 때가 이른 줄 아시고 세상에 있는 자기 사람들을 사랑하시되 끝까지 사랑하시니라\"",
+                        "background": "십자가 처형을 앞둔 마가의 다락방(최후의 만찬) 배경입니다. 예수님은 가룟 유다가 자신을 배반할 것과 베드로가 부인할 것, 제자들이 모두 도망칠 것을 이미 알고 계셨습니다. 그럼에도 불구하고 제자들의 발을 씻기시며 자신의 십자가 대속 사역을 통해 그들을 '끝까지' 사랑하심을 보여주십니다.",
+                        "interpretation": "세상의 사랑은 감정이 사그라들거나 조건이 맞지 않으면 쉽게 이별을 말합니다. 그러나 하나님의 사랑은 한 번 피로 거룩하게 산 자녀를 우주 역사의 끝, 영원까지 완벽히 책임지시는 사랑입니다.",
+                        "illustration": "\"미국 콜롬비아 신학교의 로버트슨 맥퀼킨 총장은 한창 존경받으며 사역하던 중, 치매에 걸린 아내를 간병하기 위해 돌연 총장직을 사임했습니다. 사람들이 만류하자 그는 대답했습니다. '제가 오늘 내리는 이 결정은 42년 전 결혼식에서 이미 내려져 있었습니다. 죽음이 두 사람을 갈라놓을 때까지 사랑하겠다고 약속하지 않았습니까?'\"",
+                        "question": "나의 반복되는 연약함이나 실수 때문에 스스로 '하나님도 나를 포기하셨을 거야'라고 좌절했던 적이 있습니까?",
+                        "summary": "영원한 책임 ('끝까지' 사랑)",
+                        "action": "나를 끝까지 책임지시는 하나님을 신뢰하며, 오늘 내가 포기하지 않고 인내하며 사랑해야 할 사람은 누구입니까?",
+                        "prayer": "🙏 \"주님, 변덕스러운 제 모습에도 불구하고 저를 영원히 책임지시고 끝까지 사랑해 주시니 감사합니다. 주님의 그 끈질긴 사랑을 본받아, 저도 제게 주어진 사람들과 사명을 쉽게 포기하지 않고 끝까지 사랑하게 하소서. 예수님의 이름으로 기도합니다. 아멘.\""
+            },
+            {
+                        "day": "수",
+                        "title": "흔들림 없는 신실함 ('한결같은' 사랑)",
+                        "passageRef": "디모데후서 2:13",
+                        "passageText": "\"우리는 미쁨이 없을지라도 주는 항상 미쁘시니 자기를 부인하실 수 없으시리라\"",
+                        "background": "사도 바울이 로마의 차가운 감옥에서 순교를 앞두고 영적 아들 디모데에게 쓴 유언과도 같은 편지입니다. 핍박 속에서 신앙을 저버리는('미쁨이 없는') 사람들이 속출했지만, 바울은 인간의 연약함이나 실패가 하나님의 신실하심(항상 미쁘심)을 무효화할 수 없음을 선포합니다.",
+                        "interpretation": "세상의 사랑은 상대방의 기분이나 태도에 실시간으로 영향을 받아 요동칩니다. 그러나 하나님의 사랑은 감정 기복이 심한 우리에게 뿌리를 두지 않고, 회전하는 그림자도 없으신 하나님 자신의 신실한 성품에 닻을 내리고 있습니다.",
+                        "illustration": "\"거센 폭풍우가 몰아치는 밤바다를 항해하는 배를 생각해 보십시오. 배는 파도에 따라 이리저리 요동치고 흔들리며 멀미를 유발합니다. 그러나 바위섬 위에 세워진 등대는 흔들리지 않습니다. 우리의 감정과 신앙 상태는 폭풍 속의 배처럼 이랬다저랬다 하지만, 하나님의 사랑은 반석 위의 등대처럼 한결같은 빛을 비추십니다.\"",
+                        "question": "최근 내 감정의 기복이나 환경의 어려움 때문에 '하나님이 나를 사랑하지 않으시나?' 하고 의심했던 적이 있습니까?",
+                        "summary": "흔들림 없는 신실함 ('한결같은' 사랑)",
+                        "action": "흔들리는 내 감정이 아닌, 반석 같으신 하나님의 성품에 내 마음의 닻을 내리기 위해 오늘 무엇을 결단하겠습니까?",
+                        "prayer": "🙏 \"주님, 제 마음은 갈대처럼 쉽게 흔들리고 주님을 향한 열심도 식어질 때가 많습니다. 하지만 이런 저의 어떠함과 상관없이 언제나 한결같은 빛으로 저를 비춰주심을 감사합니다. 요동치는 감정에 속지 않고 항상 미쁘신 주님만 바라보게 하소서. 예수님의 이름으로 기도합니다. 아멘.\""
+            },
+            {
+                        "day": "목",
+                        "title": "배신을 이기는 은혜 ('그럼에도 불구하고')",
+                        "passageRef": "호세아 3:1",
+                        "passageText": "\"여호와께서 내게 이르시되 이스라엘 자손이 다른 신을 섬기고 건포도 과자를 즐길지라도 여호와가 그들을 사랑하나니 너는 또 가서 음녀가 된 그 여자를 사랑하라\"",
+                        "background": "하나님은 선지자 호세아에게 몸을 파는 여인 '고멜'과 결혼하라는 충격적인 명령을 내리십니다. 고멜은 결혼 후에도 자녀들을 버리고 또다시 다른 남자를 찾아 떠납니다. 그럼에도 하나님은 호세아에게 은 열다섯 개를 주고 그녀를 다시 사오라고 하십니다. 이는 영적으로 간음하고 우상을 섬기는 이스라엘을 향한 하나님의 처절한 사랑을 보여주는 상징입니다.",
+                        "interpretation": "우리의 배신보다 하나님의 용서가 더 큽니다. 우리의 더러움보다 십자가 보혈의 씻으심이 더 강력합니다. 이것이 '그럼에도 불구하고' 사랑하시는 헤세드입니다.",
+                        "illustration": "\"반항기에 접어든 아들이 부모의 지갑에 손을 대고 가출을 했습니다. 밖에서 방탕하게 살다 엄청난 빚을 지고 노예처럼 일하게 되었습니다. 아버지는 아들을 호적에서 파는 대신, 평생 모은 전 재산을 들여 아들의 빚을 갚아주고, 아무런 정죄 없이 아들의 손을 잡고 집으로 돌아옵니다. 하나님은 우리가 지은 죄의 값을 독생자 예수의 피로 지불하시고 우리를 다시 데려오셨습니다.\"",
+                        "question": "하나님을 떠나 내 마음대로 살려 했던 나를 '그럼에도 불구하고' 용서하고 품어주신 은혜를 깊이 묵상해 봅시다.",
+                        "summary": "배신을 이기는 은혜 ('그럼에도 불구하고')",
+                        "action": "나에게 큰 상처를 주어 미워하고 있는 사람이 있습니까? 주님의 은혜를 기억하며, 오늘 내가 내릴 수 있는 용서의 결단은 무엇입니까?",
+                        "prayer": "🙏 \"주님, 수없이 넘어지고 배신하는 저를 '그럼에도 불구하고' 피 흘리며 안아주신 그 십자가 사랑 앞에 엎드립니다. 받을 자격 없는 은혜를 받았사오니, 저 또한 이웃의 허물을 덮어주고 인내하며 사랑할 수 있는 넉넉한 마음을 주옵소서. 예수님의 이름으로 기도합니다. 아멘.\""
+            },
+            {
+                        "day": "금",
+                        "title": "사랑의 징계 (바로잡으시는 사랑)",
+                        "passageRef": "히브리서 12:6, 8",
+                        "passageText": "\"주께서 그 사랑하시는 자를 징계하시고 그가 받아들이시는 아들마다 채찍질하심이라... 징계는 다 받는 것이거늘 너희에게 없으면 사생자요 친아들이 아니니라\"",
+                        "background": "히브리서는 극심한 핍박과 환난 속에서 신앙을 포기하고 유대교로 돌아가려는 성도들에게 쓰였습니다. 저자는 그들이 당하는 고난을 '하나님의 버리심'으로 해석하지 않고, 오히려 영적 생명을 풍성하게 하고 거룩함에 이르게 하려는 '아버지의 사랑 깊은 징계(훈련)'로 재해석하여 위로와 소망을 줍니다.",
+                        "interpretation": "세상의 무관심한 사랑은 상대를 굳이 힘들게 바로잡으려 애쓰지 않습니다. 어차피 끝까지 곁에 둘 생각이 없기 때문입니다. 하지만 하나님은 우리를 내버려 두지 않으시고, 때로는 아픔을 주시면서까지 바로잡으십니다. 징계가 있다는 것 자체가 우리가 '참 자녀'라는 가장 확실한 증거입니다. 당장은 징계가 슬퍼 보이나, 그 훈련을 통과한 자들에게는 의와 평강의 열매가 맺힙니다. 하나님은 우리를 다듬어서라도 구원과 영광의 자리로 이끌어 가십니다.",
+                        "illustration": "\"강도의 칼과 외과 의사의 메스는 모두 사람의 몸을 찢고 고통을 줍니다. 강도의 칼은 생명을 빼앗기 위한 것이지만, 외과 의사의 메스는 썩어가는 종양을 도려내어 생명을 살리기 위한 것입니다. 하나님께서 우리 삶에 허락하시는 고난과 징계는 우리를 파괴하는 강도의 칼이 아니라, 우리의 영혼을 낫게 하시는 거룩한 명의의 메스입니다.\"",
+                        "question": "최근 내 삶에 찾아온 어려움이나 고난을 나를 미워해서가 아니라 다듬으시려는 하나님의 사랑으로 바라볼 수 있습니까?",
+                        "summary": "사랑의 징계 (바로잡으시는 사랑)",
+                        "action": "주님의 징계와 책망 앞에서 원망이나 좌절 대신, 회개와 감사로 반응하기 위해 내 마음을 어떻게 지켜야 할까요?",
+                        "prayer": "🙏 \"주님, 고난 속에서도 저를 버려두지 않으시고 거룩하게 빚어 가시는 아버지의 훈련의 손길을 보게 하소서. 비록 당장은 아프고 힘들지라도, 이것이 저를 친자녀로 대우하시는 사랑의 증거임을 믿으며 인내함으로 평강의 열매를 맺게 하소서. 예수님의 이름으로 기도합니다. 아멘.\""
+            },
+            {
+                        "day": "토",
+                        "title": "영원한 약속 ('언약' 헌신)",
+                        "passageRef": "로마서 8:32",
+                        "passageText": "\"자기 아들을 아끼지 아니하시고 우리 모든 사람을 위하여 내주신 이가 어찌 그 아들과 함께 모든 것을 우리에게 주시지 아니하겠느냐\"",
+                        "background": "로마서 8장은 복음이 주는 '완전한 확신'의 절정입니다. 바울은 논리적이고도 장엄한 선언을 합니다. 하나님께서 이미 가장 소중한 가치인 '독생자 예수'를 우리를 위해 아낌없이 내어주셨다면, 그보다 덜한 우리 삶의 모든 필요와 구원의 완성은 너무나 당연히 보장된 것이라는 '큰 것에서 작은 것으로의 논증'입니다.",
+                        "interpretation": "세상의 관계는 서로의 필요를 채우기 위한 '계약(Contract)'입니다. 조건이 깨지면 언제든 파기할 수 있는 탈출 조항이 있습니다. 그러나 하나님의 사랑은 '언약(Covenant)'입니다. 하나님은 스스로를 거룩한 법 조문 아래 묶어, 어떤 파국의 상황에서도 자기 백성을 버리지 못하게 하셨습니다. 우리를 향한 사랑의 담보는 바로 '하나님의 성품'과 '그리스도의 보혈'입니다. 내일 주일을 준비하며, 이 어마어마한 언약 사랑의 무게를 깊이 누립시다.",
+                        "illustration": "\"부동산 계약서는 돈을 제때 내지 않으면 언제든 취소됩니다. 그러나 부모와 자식의 관계, 혹은 진정한 결혼 서약은 '조건'에 따라 무효가 되지 않습니다. 하나님은 우리와의 관계를 구속력 있는 언약으로 맺으셨고, 그 언약서에 잉크가 아닌 십자가 예수 그리스도의 피로 서명하셨습니다. 취소할 수 없는 영원한 보증입니다.\"",
+                        "question": "아들까지 내어주신 분이 내 삶을 책임지신다는 사실이 지금 나의 가장 큰 걱정거리에 어떤 위로를 줍니까?",
+                        "summary": "영원한 약속 ('언약' 헌신)",
+                        "action": "이 영원하고 거룩한 언약의 사랑을 기억하며, 내일 주일 예배를 어떤 마음과 태도로 준비하겠습니까?",
+                        "prayer": "🙏 \"주님, 저를 위해 전능하신 분이 스스로 언약에 매이시고 아들까지 내어주신 그 헤아릴 수 없는 사랑을 찬양합니다. 세상의 조그만 어려움 앞에서도 두려워하던 연약함을 용서하시고, 이 확실한 언약 안에서 참된 평안을 누리며 기쁨으로 내일 예배의 자리로 나아가게 하소서. 예수님의 이름으로 기도합니다. 아멘.\""
+            },
+            {
+                        "day": "주일",
+                        "title": "열정을 넘어, 헤세드로",
+                        "passageRef": "마태복음 26장 31절 ~ 35절, 69절 ~ 75절",
+                        "passageText": "예수께서 이르시되 내가 진실로 네게 이르노니 오늘 밤 닭 울기 전에 네가 세 번 나를 부인하리라 베드로가 이르되 내가 주와 함께 죽을지언정 주를 부인하지 않겠나이다 하고... 베드로가 생각에 닭 울기 전에 네가 세 번 나를 부인하리라 함이 생각나서 밖에 나가서 심히 통곡하니라",
+                        "background": "베드로는 자신의 열정과 의지를 신뢰하며 '모두 주를 버릴지라도 나는 결코 버리지 않겠나이다'라고 자신했습니다. 그러나 십자가를 앞둔 밤, 작은 여종 앞에서도 세 번이나 주님을 부인하며 자신의 철저한 연약함과 한계를 경험하게 됩니다.",
+                        "interpretation": "주일을 맞아 우리는 베드로의 인간적 열정의 한계를 봅니다. 내 열정, 내 의지, 내 서원은 풍랑과 위기 앞에서 쉽게 무너집니다. 그러나 주님이 우리를 붙드시는 사랑은 단순한 인간적 열정을 넘어선 하나님의 '헤세드'입니다. 무너진 베드로를 찾아오셔서 다시 세우신 그 헤세드가 오늘 우리를 붙들고 계십니다.",
+                        "illustration": "바람에 휘청이는 조그만 돛단배는 사나운 풍랑을 이길 수 없습니다. 그러나 거대한 항만 밧줄에 단단히 묶인 배는 어떤 풍랑에도 쓸려가지 않습니다. 우리의 열정은 돛단배 같으나 하나님의 헤세드는 견고한 밧줄입니다.",
+                        "question": "내 의지와 열정이 무너졌을 때, 나를 다시 일으켜 세우신 하나님의 헤세드를 경험한 적이 있습니까?",
+                        "summary": "내 열정은 무너져도, 나를 향한 하나님의 헤세드는 결코 무너지지 않습니다.",
+                        "action": "이번 한 주 묵상한 헤세드의 6가지 얼굴 중 하나를 마음에 품고 결단하기",
+                        "prayer": "인간적 열정과 호언장담을 내려놓고, 끝까지 찾아오셔서 품어주시는 주님의 헤세드에 나를 맡기게 하소서."
+            }
+];
+
+        let currentDayIndex = 0;
+        const homeView = document.getElementById('home-view');
+        const dailyView = document.getElementById('daily-view');
+        const dayList = document.getElementById('day-list');
+
+        let currentSlide = 1;
+        const totalSlides = 27;
+
+        function updateSlide() {
+            const img = document.getElementById('slide-image');
+            img.style.opacity = '0.3'; 
+            setTimeout(() => {
+                img.src = `slide${currentSlide}.png`;
+                img.style.opacity = '1';
+            }, 150);
+            document.getElementById('slide-counter').innerText = `${currentSlide} / ${totalSlides}`;
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 1) currentSlide = totalSlides;
+            updateSlide();
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide > totalSlides) currentSlide = 1;
+            updateSlide();
+        }
+
+        function initApp() {
+            const completedDays = JSON.parse(localStorage.getItem(DEVOTION_KEY) || '[]');
+            dayList.innerHTML = ''; 
+            
+            devotionals.forEach((dev, index) => {
+                const isCompleted = completedDays.includes(index);
+                const bgClass = isCompleted ? 'bg-stone-50 border-stone-200' : 'bg-white border-stone-200 hover:border-emerald-400';
+                const textClass = isCompleted ? 'text-stone-400' : 'text-stone-800';
+                const checkIcon = isCompleted ? '<i class="fas fa-check-circle text-emerald-500 text-xl"></i>' : '<i class="far fa-circle text-stone-300 text-xl group-hover:text-emerald-400"></i>';
+
+                const card = document.createElement('div');
+                card.className = `group p-4 rounded-xl border cursor-pointer transition-all card-shadow flex items-center justify-between ${bgClass}`;
+                card.onclick = () => openDaily(index);
+                card.innerHTML = `
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full ${isCompleted ? 'bg-stone-200' : 'wood-gradient'} text-white flex items-center justify-center font-bold shadow-sm flex-shrink-0">
+                            ${dev.day}
+                        </div>
+                        <div>
+                            <h3 class="font-bold ${textClass} text-base sm:text-lg mb-1">${dev.title}</h3>
+                            <p class="text-xs ${isCompleted ? 'text-stone-400' : 'text-stone-500'} font-medium"><i class="fas fa-bible mr-1"></i> ${dev.passageRef}</p>
+                        </div>
+                    </div>
+                    <div>${checkIcon}</div>
+                `;
+                dayList.appendChild(card);
+            });
+        }
+
+        function openDaily(index) {
+            currentDayIndex = index;
+            const data = devotionals[index];
+            const completedDays = JSON.parse(localStorage.getItem(DEVOTION_KEY) || '[]');
+            const isCompleted = completedDays.includes(index);
+
+            const badgeText = data.day === '주일' ? '주일 묵상' : `${data.day}요일의 묵상`;
+            document.getElementById('daily-badge').innerText = badgeText;
+            document.getElementById('daily-title').innerText = data.title;
+            document.getElementById('daily-passage-ref').innerHTML = `<i class="fas fa-bible mr-1"></i> ${data.passageRef}`;
+            document.getElementById('daily-passage-text').innerText = data.passageText;
+            document.getElementById('daily-background').innerText = data.background;
+            document.getElementById('daily-interpretation').innerText = data.interpretation;
+            document.getElementById('daily-illustration').innerText = data.illustration;
+            
+            document.getElementById('daily-question').innerText = `"${data.question}"`;
+            document.getElementById('daily-summary').innerText = data.summary;
+            document.getElementById('daily-action').innerText = data.action;
+            document.getElementById('daily-prayer').innerText = data.prayer;
+
+            const btnComplete = document.getElementById('btn-complete');
+            if(isCompleted) {
+                btnComplete.innerHTML = '<i class="fas fa-check"></i> 완료된 묵상입니다';
+                btnComplete.className = "w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 bg-stone-200 text-stone-500 cursor-not-allowed";
+                btnComplete.disabled = true;
+            } else {
+                btnComplete.innerHTML = '<i class="fas fa-check-circle"></i> 오늘의 묵상 완료하기';
+                btnComplete.className = "w-full py-4 rounded-xl font-bold text-lg transition-all shadow-md flex items-center justify-center gap-2 emerald-gradient text-white hover:opacity-90";
+                btnComplete.disabled = false;
+            }
+
+            homeView.classList.add('hidden');
+            dailyView.classList.remove('hidden');
+            window.scrollTo(0, 0); 
+        }
+
+        function goHome() {
+            dailyView.classList.add('hidden');
+            homeView.classList.remove('hidden');
+            initApp(); 
+            window.scrollTo(0, 0);
+        }
+
+        function markAsCompleted() {
+            const completedDays = JSON.parse(localStorage.getItem(DEVOTION_KEY) || '[]');
+            if (!completedDays.includes(currentDayIndex)) {
+                completedDays.push(currentDayIndex);
+                localStorage.setItem(DEVOTION_KEY, JSON.stringify(completedDays));
+            }
+            goHome(); 
+        }
+
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
