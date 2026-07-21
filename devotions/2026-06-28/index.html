@@ -55,7 +55,180 @@
 
     <!-- 상단 글로벌 네비게이션 -->
     <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="../../index.html" class="text-xl font-bold text-indigo-900 flex items-center gap-2">
+                    <span>빌드업교회</span>
+                </a>
+                <div class="flex items-center space-x-4 text-sm font-semibold">
+                    <a href="../index.html" class="text-stone-600 hover:text-indigo-600 transition flex items-center gap-1">
+                        <i class="fas fa-list-ul"></i> 묵상 목록
+                    </a>
+                    <a href="../../index.html" class="text-stone-600 hover:text-indigo-600 transition hidden sm:inline-block">
+                        교회 홈
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 컨테이너 -->
+    <main class="max-w-2xl mx-auto w-full bg-white min-h-screen card-shadow sm:rounded-2xl mt-16 sm:mt-20 overflow-hidden relative flex-grow">
         
+        <!-- 메인 목록 뷰 -->
+        <div id="home-view" class="block fade-in">
+            <!-- Header -->
+            <header class="wood-gradient text-white p-8 text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+                <div class="relative z-10">
+                    <div class="flex justify-center items-center gap-2 mb-3">
+                        <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-xs font-semibold tracking-wider text-amber-50 backdrop-blur-sm">
+                            2026.06.28 주일 설교 묵상
+                        </span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3 break-keep">
+                        열정을 넘어,<br>헤세드로
+                    </h1>
+                    <p class="text-amber-100/90 text-sm sm:text-base font-light break-keep max-w-lg mx-auto">
+                        실패해도 흔들리지 않는 하나님의 헤세드(인자)를 붙드는 7일의 여정
+                    </p>
+                </div>
+            </header>
+
+            <div class="p-6 sm:p-8 space-y-10">
+                
+                <!-- 주일 설교 영상 및 요약 -->
+                <section class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <i class="fab fa-youtube text-red-500"></i> 주일 설교 다시보기
+                        </h2>
+                    </div>
+                    <div class="video-container shadow-md border border-stone-200 bg-black rounded-xl overflow-hidden relative" style="padding-bottom: 56.25%; height: 0;">
+                    <iframe src="https://www.youtube.com/embed/zALfAmYy_WQ" title="주일 설교 영상" class="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                    <div class="bg-stone-50 p-4 rounded-xl border border-stone-200 text-sm text-stone-600 leading-relaxed break-keep">
+                        <span class="font-bold text-amber-800">설교 요약:</span> 베드로는 예수님을 세 번 부인했지만, 그 실패가 하나님의 사랑을 끝내지 못했습니다. 하나님의 헤세드(인자)는 우리의 순간적인 열정이 아니라, 흔들림 없이 끝까지 붙드시는 한결같은 사랑입니다. 우리의 신실함이 아니라 그분의 신실하심이 우리를 붙듭니다.
+                    </div>
+                </section>
+
+                <!-- 설교 슬라이드 캐러셀 -->
+                <section class="bg-white rounded-2xl p-6 border border-stone-200/60 shadow-sm relative overflow-hidden">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <i class="fas fa-images text-amber-600"></i> 주일 설교 슬라이드
+                        </h2>
+                        <div id="slide-counter" class="text-xs font-bold px-3 py-1 bg-stone-100 text-stone-600 rounded-full">
+                            1 / 23
+                        </div>
+                    </div>
+                    
+                    <div class="relative w-full aspect-video bg-[#4f4339] rounded-xl overflow-hidden shadow-inner flex items-center justify-center group">
+                        <!-- 슬라이드 이미지 -->
+                        <img id="slide-image" src="slide1.png" class="w-full h-full object-contain transition-opacity duration-200" alt="설교 슬라이드">
+                        
+                        <!-- 왼쪽 화살표 -->
+                        <button onclick="prevSlide()" class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10 shadow-md" aria-label="이전 슬라이드">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <!-- 오른쪽 화살표 -->
+                        <button onclick="nextSlide()" class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10 shadow-md" aria-label="다음 슬라이드">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-stone-400 text-center mt-3"><i class="fas fa-hand-pointer mr-1"></i> 좌우 화살표를 눌러 슬라이드를 넘겨보세요.</p>
+                </section>
+
+                <!-- 매일의 안식 안내 -->
+                <section class="bg-[#fbf9f6] rounded-2xl p-6 border border-stone-200/60">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 rounded-full wood-gradient flex items-center justify-center text-white shadow-sm">
+                            <i class="fas fa-leaf text-sm"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-stone-800">매일 이렇게 새로워지세요</h2>
+                    </div>
+                    <ul class="space-y-4 text-sm text-stone-600">
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>정직한 인정:</strong> 오늘 내 마음의 혼돈·공허·흑암이 무엇인지 숨기지 않고 하나님 앞에 꺼내놓습니다.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>말씀 읽기:</strong> 오늘 주어진 본문과 해설을 천천히 읽으며 주님의 음성을 듣습니다.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>순종 하나:</strong> 마음에 주신 순종할 일을 미루지 않고, 오늘 안에 실제로 행합니다.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-600 font-bold mt-0.5"><i class="fas fa-check"></i></span>
+                            <span><strong>결단과 체크:</strong> 오늘의 결단을 기도로 올려드리고 묵상 완료 체크를 합니다.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 요일별 묵상 리스트 -->
+                <section>
+                    <h2 class="text-xl font-bold text-stone-800 mb-5 pl-2 border-l-4 border-emerald-500">요일별 묵상 여정</h2>
+                    <div class="grid grid-cols-1 gap-3" id="day-list">
+                        <!-- JS로 요일별 카드 동적 생성 -->
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- 개별 요일 묵상 뷰 -->
+        <div id="daily-view" class="hidden fade-in bg-white min-h-screen">
+            <!-- Top Nav -->
+            <div class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-100 p-4 flex items-center justify-between shadow-sm">
+                <button onclick="goHome()" class="text-stone-500 hover:text-stone-800 flex items-center gap-2 font-medium transition-colors">
+                    <i class="fas fa-arrow-left"></i> 목록으로
+                </button>
+                <div id="daily-badge" class="text-xs font-bold px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">
+                    월요일
+                </div>
+            </div>
+
+            <div class="p-6 sm:p-8 space-y-8 pb-20">
+                <!-- 제목 영역 -->
+                <div class="text-center space-y-3 mt-4">
+                    <h1 id="daily-title" class="text-2xl sm:text-3xl font-bold text-stone-800 break-keep leading-tight">제목</h1>
+                    <p id="daily-passage-ref" class="text-emerald-600 font-medium"><i class="fas fa-bible mr-1"></i> 성경구절</p>
+                </div>
+
+                <!-- 1. 본문 말씀 -->
+                <div class="bg-[#fbf9f6] rounded-2xl p-6 border-l-4 border-amber-700 shadow-sm relative">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full wood-gradient text-white flex items-center justify-center shadow">
+                        <i class="fas fa-quote-left text-xs"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-stone-500 mb-3">본문 말씀</h3>
+                    <p id="daily-passage-text" class="text-stone-800 text-lg leading-relaxed break-keep font-serif"></p>
+                </div>
+
+                <!-- 2. 배경 및 해석 -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                        <i class="fas fa-lightbulb text-amber-600"></i> 말씀의 배경과 해석
+                    </h3>
+                    <div class="bg-white border border-stone-200 rounded-xl p-5 text-stone-600 leading-relaxed text-sm break-keep space-y-4">
+                        <p id="daily-background"></p>
+                        <hr class="border-stone-100">
+                        <p id="daily-interpretation"></p>
+                    </div>
+                </div>
+
+                <!-- 2.5 묵상을 돕는 이야기 -->
+                <div class="bg-amber-50/60 rounded-2xl p-6 border border-amber-200/60 shadow-sm relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 text-amber-500/10 text-6xl">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-md font-bold text-amber-800 mb-3 flex items-center gap-2 relative z-10">
+                        <i class="fas fa-seedling text-amber-600"></i> 묵상을 돕는 이야기
+                    </h3>
+                    <p id="daily-illustration" class="text-stone-700 leading-relaxed text-sm break-keep relative z-10 font-medium"></p>
+                </div>
 
                 <!-- 3. 깊은 묵상 질문 -->
                 <div class="emerald-light-gradient rounded-2xl p-6 border border-emerald-200 shadow-inner">
