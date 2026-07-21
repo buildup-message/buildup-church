@@ -103,16 +103,18 @@
                         <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
                             <i class="fab fa-youtube text-red-600"></i> 주일 설교 다시보기
                         </h2>
-                        <div class="flex bg-stone-200 p-1 rounded-lg gap-1">
-                            <button onclick="switchVideo(1)" id="btn-video-1" class="px-3 py-1 text-xs font-bold rounded-md bg-stone-800 text-white transition-all shadow-sm">1부 설교</button>
-                            <button onclick="switchVideo(2)" id="btn-video-2" class="px-3 py-1 text-xs font-bold rounded-md text-stone-600 hover:text-stone-900 transition-all">2부 설교</button>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-stone-500">1부 설교</p>
+                        <div class="video-container shadow-md border border-stone-200 bg-black rounded-xl overflow-hidden relative" style="padding-bottom: 56.25%; height: 0;">
+                            <iframe src="https://www.youtube-nocookie.com/embed/9JvvDQBKr14" title="1부 설교 영상" class="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div id="video-container-1" class="video-container shadow-md border border-stone-200 bg-black rounded-xl overflow-hidden relative" style="padding-bottom: 56.25%; height: 0;">
-                        <iframe src="https://www.youtube-nocookie.com/embed/9JvvDQBKr14" title="1부 설교 영상" class="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div id="video-container-2" class="video-container shadow-md border border-stone-200 bg-black rounded-xl overflow-hidden relative hidden" style="padding-bottom: 56.25%; height: 0;">
-                        <iframe src="https://www.youtube-nocookie.com/embed/D0sus9SiGlA" title="2부 설교 영상" class="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-stone-500">2부 설교</p>
+                        <div class="video-container shadow-md border border-stone-200 bg-black rounded-xl overflow-hidden relative" style="padding-bottom: 56.25%; height: 0;">
+                            <iframe src="https://www.youtube-nocookie.com/embed/D0sus9SiGlA" title="2부 설교 영상" class="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div class="bg-stone-50 p-4 rounded-xl border border-stone-200 text-sm text-stone-600 leading-relaxed break-keep">
                         <span class="font-bold text-amber-800">설교 요약:</span> 세상은 성과와 지위로 성공을 정의하지만, 성경은 하나님이 맡기신 자리에서 신실함으로 목적을 이루는 것이 진짜 성공이라고 말합니다. 결과를 비교하며 좌절하지 않고, 이미 그리스도 안에서 성공한 자로서 오늘의 자리에 신실하게 서 있는 것 — 그것이 성경이 말하는 진짜 성공입니다.
@@ -442,25 +444,6 @@
                 `;
                 dayList.appendChild(card);
             });
-        }
-
-        
-        function switchVideo(num) {
-            const v1 = document.getElementById('video-container-1');
-            const v2 = document.getElementById('video-container-2');
-            const b1 = document.getElementById('btn-video-1');
-            const b2 = document.getElementById('btn-video-2');
-            if (num === 1) {
-                v1.classList.remove('hidden');
-                v2.classList.add('hidden');
-                b1.className = "px-3 py-1 text-xs font-bold rounded-md bg-stone-800 text-white transition-all shadow-sm";
-                b2.className = "px-3 py-1 text-xs font-bold rounded-md text-stone-600 hover:text-stone-900 transition-all";
-            } else {
-                v2.classList.remove('hidden');
-                v1.classList.add('hidden');
-                b2.className = "px-3 py-1 text-xs font-bold rounded-md bg-stone-800 text-white transition-all shadow-sm";
-                b1.className = "px-3 py-1 text-xs font-bold rounded-md text-stone-600 hover:text-stone-900 transition-all";
-            }
         }
 
         function openDaily(index) {
