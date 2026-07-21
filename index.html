@@ -24,10 +24,12 @@
     <nav class="fixed w-full bg-white shadow-sm z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden text-2xl text-gray-700" aria-label="메뉴 열기">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <a href="#" class="text-2xl font-bold text-indigo-900">빌드업교회</a>
+                <div class="flex items-center gap-3">
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden text-2xl text-gray-700" aria-label="메뉴 열기">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#" class="text-2xl font-bold text-indigo-900">빌드업교회</a>
+                </div>
                 <div class="hidden md:flex space-x-8 text-sm font-semibold">
                     <a href="#about" class="hover:text-indigo-600 transition">교회 소개</a>
                     <a href="#worship" class="hover:text-indigo-600 transition">예배와 말씀</a>
