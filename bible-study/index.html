@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금요성경공부 | 빌드업교회</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(75, 46, 23, 0.78), rgba(75, 46, 23, 0.72)), url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+        }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- 네비게이션 바 -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden text-2xl text-gray-700" aria-label="메뉴 열기">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="../index.html" class="text-2xl font-bold text-indigo-900">빌드업교회</a>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="../index.html#about" class="hover:text-indigo-600 transition">교회 소개</a>
+                    <a href="../index.html#worship" class="hover:text-indigo-600 transition">예배와 말씀</a>
+                    <a href="../sermons/index.html" class="hover:text-indigo-600 transition">주일설교 영상</a>
+                    <a href="../devotions/index.html" class="hover:text-indigo-600 transition">주간 묵상</a>
+                    <a href="index.html" class="text-indigo-600 font-bold">금요성경공부</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden flex-col space-y-1 pb-4 text-sm font-semibold border-t border-gray-100 pt-3">
+                <a href="../index.html#about" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">교회 소개</a>
+                <a href="../index.html#worship" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">예배와 말씀</a>
+                <a href="../sermons/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">주일설교 영상</a>
+                <a href="../devotions/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-indigo-600 transition">주간 묵상</a>
+                <a href="index.html" onclick="closeMobileMenu()" class="block py-2 text-indigo-600 font-bold">금요성경공부</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
+        }
+    </script>
+
+    <!-- 서브 헤어로 섹션 -->
+    <header class="hero-bg pt-32 pb-16 text-center px-4 text-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-4 rounded-full bg-amber-500/30 text-amber-100 text-sm font-medium mb-3 backdrop-blur-sm border border-amber-300/30">
+                Friday Bible Study
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">금요성경공부</h1>
+            <p class="text-gray-200 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                본문을 천천히 읽으며 궁금한 것을 묻고 함께 답을 찾아가는 슬로우리딩 나눔입니다.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow w-full">
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900">지난 나눔 목록</h2>
+                <p class="text-sm text-gray-500 mt-1">모임에 참여하지 못하셨던 분들도 흐름을 따라오실 수 있도록 정리했습니다.</p>
+            </div>
+            <span class="text-sm bg-amber-50 text-amber-700 px-3 py-1 rounded-full font-semibold border border-amber-100">
+                총 1건
+            </span>
+        </div>
+
+        <div class="grid gap-6">
+
+            <!-- 2026-07-31 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100 hover:border-amber-300 transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="space-y-3 flex-grow">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">
+                            <i class="far fa-calendar-alt mr-1"></i> 2026.07.31 (금)
+                        </span>
+                        <span class="bg-stone-100 text-stone-700 text-xs font-semibold px-2.5 py-0.5 rounded">
+                            요한복음 16:1-15
+                        </span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 hover:text-indigo-600 transition">
+                        <a href="2026-07-31/index.html">나 혼자서는 알 수 없었던 것들</a>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed line-clamp-2">
+                        출교, 성령의 세 가지 책망, 그리고 두 개의 생생한 목회 현장 이야기로 나눈 질문 중심의 성경공부.
+                    </p>
+                </div>
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="2026-07-31/index.html" class="w-full md:w-auto text-center bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 group">
+                        보러 가기 <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm mt-auto">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-2">빌드업교회</h2>
+            <p class="mb-4">기독교대한성결교회 | 담임목사 황성현</p>
+            <p>인천시 검단구 청마로167번길 3, 대우프라자 3층 302호</p>
+            <p class="mt-8 text-gray-600">© 2026 Build-Up Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
