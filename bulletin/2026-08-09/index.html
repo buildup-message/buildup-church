@@ -163,10 +163,10 @@
         </div>
     </footer>
 
-    <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center" onclick="if(event.target===this) closeLightbox()">
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center" onclick="if(event.target===this) closeLightbox()" style="touch-action: none;">
         <button onclick="closeLightbox()" class="absolute top-4 right-5 text-white text-4xl leading-none" aria-label="닫기">&times;</button>
         <button onclick="lightboxPrev()" class="absolute left-2 md:left-6 text-white text-5xl leading-none px-2 select-none" aria-label="이전">&#8249;</button>
-        <img id="lightbox-img" src="" alt="" class="max-h-[88vh] max-w-[90vw] rounded-lg shadow-2xl">
+        <img id="lightbox-img" src="" alt="" class="max-h-[88vh] max-w-[90vw] rounded-lg shadow-2xl" style="touch-action: none;">
         <button onclick="lightboxNext()" class="absolute right-2 md:right-6 text-white text-5xl leading-none px-2 select-none" aria-label="다음">&#8250;</button>
     </div>
 
@@ -225,17 +225,28 @@
             if (e.key === 'ArrowRight') lightboxNext();
         });
 
-        // 모바일에서 확대된 사진을 손가락으로 좌우로 밀어서(스와이프) 넘길 수 있게 함
+        // 모바일에서 확대된 사진을 손가락으로 좌우로 밀어서(스와이프) 넘길 수 있게 함.
+        // 브라우저 자체의 확대/이동(핀치줌·팬) 제스처가 스와이프를 가로채지 못하도록
+        // touchmove에서 preventDefault로 기본 동작을 명시적으로 막는다(passive:false 필수).
         let touchStartX = 0;
         let touchStartY = 0;
+        let touchMoved = false;
         const lightboxEl = document.getElementById('lightbox');
+        const lightboxImgEl = document.getElementById('lightbox-img');
 
-        lightboxEl.addEventListener('touchstart', function (e) {
+        function lbTouchStart(e) {
             touchStartX = e.changedTouches[0].screenX;
             touchStartY = e.changedTouches[0].screenY;
-        }, { passive: true });
+            touchMoved = false;
+        }
 
-        lightboxEl.addEventListener('touchend', function (e) {
+        function lbTouchMove(e) {
+            touchMoved = true;
+            e.preventDefault();
+        }
+
+        function lbTouchEnd(e) {
+            if (!touchMoved) return;
             const dx = e.changedTouches[0].screenX - touchStartX;
             const dy = e.changedTouches[0].screenY - touchStartY;
             if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return; // 세로 스크롤/짧은 터치는 무시
@@ -244,7 +255,13 @@
             } else {
                 lightboxNext();
             }
-        }, { passive: true });
+        }
+
+        [lightboxEl, lightboxImgEl].forEach(function (el) {
+            el.addEventListener('touchstart', lbTouchStart, { passive: true });
+            el.addEventListener('touchmove', lbTouchMove, { passive: false });
+            el.addEventListener('touchend', lbTouchEnd, { passive: true });
+        });
     </script>
 </body>
 </html>
