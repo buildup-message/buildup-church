@@ -16,6 +16,9 @@
         .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02); }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.75rem; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .cn-carousel { aspect-ratio: 4 / 5; touch-action: none; }
+        #lightbox { touch-action: none; }
+        #lightbox-img { touch-action: none; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -85,14 +88,48 @@
         <div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
             <div>
                 <h2 class="text-2xl font-bold text-gray-900">설교 영상 목록</h2>
-                <p class="text-sm text-gray-500 mt-1">영상이 있는 주일만 최신순으로 정리했습니다.</p>
+                <p class="text-sm text-gray-500 mt-1">카드뉴스와 설교 영상을 최신순으로 정리했습니다.</p>
             </div>
             <span class="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold border border-indigo-100">
-                총 8건
+                총 9건
             </span>
         </div>
 
         <div class="space-y-10">
+
+            <!-- 2026.08.09 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.08.09</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">놓치기 쉬운 기독교의 핵심 진리</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 고린도후서 13:5</p>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-gray-500 mb-2">카드뉴스로 보기 (눌러서 확대 · 확대 후 좌우로 넘기기)</p>
+                    <div class="relative max-w-sm mx-auto bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-200 cn-carousel">
+                        <button type="button" onclick="lbOpen(cardNewsState['2026-08-09'].images, cardNewsState['2026-08-09'].index, event)" class="block w-full h-full p-0 border-0 bg-transparent cursor-zoom-in">
+                            <img id="cn-img-2026-08-09" src="images/cardnews/2026-08-09/카드뉴스_1.jpg" alt="놓치기 쉬운 기독교의 핵심 진리 카드뉴스" class="w-full h-full object-contain">
+                        </button>
+                        <button type="button" onclick="cnPrev('2026-08-09')" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10" aria-label="이전 카드뉴스">
+                            <i class="fas fa-chevron-left text-sm"></i>
+                        </button>
+                        <button type="button" onclick="cnNext('2026-08-09')" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10" aria-label="다음 카드뉴스">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </button>
+                        <div id="cn-counter-2026-08-09" class="absolute bottom-2 right-2 text-xs font-bold px-2.5 py-1 bg-black/50 text-white rounded-full backdrop-blur-sm">1 / 8</div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <p class="text-xs font-bold text-gray-500 mb-2">설교 영상</p>
+                    <div class="rounded-xl border border-dashed border-gray-300 bg-gray-50 flex flex-col items-center justify-center text-gray-400 py-10 gap-2">
+                        <i class="fas fa-video-slash text-2xl"></i>
+                        <span class="text-sm">설교 영상은 준비 중입니다. 업로드되면 이 자리에 추가됩니다.</span>
+                    </div>
+                </div>
+                <a href="../devotions/2026-08-09/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
 
             <!-- 2026.08.02 -->
             <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
@@ -101,20 +138,25 @@
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">목적이 뭐야? (2)</h3>
                     <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 창세기 2:18-25</p>
                 </div>
-                <div class="video-container shadow-md border border-gray-200">
-                    <iframe src="https://www.youtube-nocookie.com/embed/wbBEBX9Pfp0" title="2026.08.02 목적이 뭐야? (2)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div>
+                    <p class="text-xs font-bold text-gray-500 mb-2">카드뉴스로 보기 (눌러서 확대 · 확대 후 좌우로 넘기기)</p>
+                    <div class="relative max-w-sm mx-auto bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-200 cn-carousel">
+                        <button type="button" onclick="lbOpen(cardNewsState['2026-08-02'].images, cardNewsState['2026-08-02'].index, event)" class="block w-full h-full p-0 border-0 bg-transparent cursor-zoom-in">
+                            <img id="cn-img-2026-08-02" src="images/cardnews/2026-08-02/카드뉴스_1.jpg" alt="목적이 뭐야?(2) 카드뉴스" class="w-full h-full object-contain">
+                        </button>
+                        <button type="button" onclick="cnPrev('2026-08-02')" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10" aria-label="이전 카드뉴스">
+                            <i class="fas fa-chevron-left text-sm"></i>
+                        </button>
+                        <button type="button" onclick="cnNext('2026-08-02')" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10" aria-label="다음 카드뉴스">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </button>
+                        <div id="cn-counter-2026-08-02" class="absolute bottom-2 right-2 text-xs font-bold px-2.5 py-1 bg-black/50 text-white rounded-full backdrop-blur-sm">1 / 8</div>
+                    </div>
                 </div>
                 <div class="mt-5">
-                    <p class="text-xs font-bold text-gray-500 mb-2">카드뉴스로 보기</p>
-                    <div class="flex gap-3 overflow-x-auto pb-2">
-                        <a href="images/cardnews/2026-08-02/카드뉴스_1.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_1.jpg" alt="목적이 뭐야?(2) 카드뉴스 1" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_2.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_2.jpg" alt="목적이 뭐야?(2) 카드뉴스 2" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_3.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_3.jpg" alt="목적이 뭐야?(2) 카드뉴스 3" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_4.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_4.jpg" alt="목적이 뭐야?(2) 카드뉴스 4" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_5.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_5.jpg" alt="목적이 뭐야?(2) 카드뉴스 5" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_6.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_6.jpg" alt="목적이 뭐야?(2) 카드뉴스 6" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_7.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_7.jpg" alt="목적이 뭐야?(2) 카드뉴스 7" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
-                        <a href="images/cardnews/2026-08-02/카드뉴스_8.jpg" target="_blank" rel="noopener"><img src="images/cardnews/2026-08-02/카드뉴스_8.jpg" alt="목적이 뭐야?(2) 카드뉴스 8" loading="lazy" class="h-40 w-auto rounded-lg border border-gray-200 shadow-sm flex-none"></a>
+                    <p class="text-xs font-bold text-gray-500 mb-2">설교 영상</p>
+                    <div class="video-container shadow-md border border-gray-200">
+                        <iframe src="https://www.youtube-nocookie.com/embed/wbBEBX9Pfp0" title="2026.08.02 목적이 뭐야? (2)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <a href="../devotions/2026-08-02/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
@@ -250,6 +292,121 @@
             <p class="mt-8 text-gray-600">© 2026 Build-Up Church. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- 카드뉴스 확대보기 라이트박스 -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-[100] items-center justify-center">
+        <button type="button" onclick="closeLightbox()" class="absolute top-4 right-4 w-11 h-11 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center z-10" aria-label="닫기">
+            <i class="fas fa-times text-lg"></i>
+        </button>
+        <button type="button" onclick="lightboxPrev()" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center z-10" aria-label="이전">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="카드뉴스 확대 이미지" class="max-w-[92vw] max-h-[86vh] object-contain rounded-lg">
+        <button type="button" onclick="lightboxNext()" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center z-10" aria-label="다음">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div id="lightbox-counter" class="absolute bottom-5 left-1/2 -translate-x-1/2 text-sm font-bold px-3 py-1 bg-white/10 text-white rounded-full">1 / 8</div>
+    </div>
+
+    <script>
+        // 주차별 카드뉴스 이미지 목록
+        const cardNewsState = {
+            '2026-08-09': {
+                images: [1,2,3,4,5,6,7,8].map(n => `images/cardnews/2026-08-09/카드뉴스_${n}.jpg`),
+                index: 0
+            },
+            '2026-08-02': {
+                images: [1,2,3,4,5,6,7,8].map(n => `images/cardnews/2026-08-02/카드뉴스_${n}.jpg`),
+                index: 0
+            }
+        };
+
+        function cnUpdate(id) {
+            const st = cardNewsState[id];
+            document.getElementById('cn-img-' + id).src = st.images[st.index];
+            document.getElementById('cn-counter-' + id).innerText = `${st.index + 1} / ${st.images.length}`;
+        }
+        function cnPrev(id) {
+            const st = cardNewsState[id];
+            st.index = (st.index - 1 + st.images.length) % st.images.length;
+            cnUpdate(id);
+        }
+        function cnNext(id) {
+            const st = cardNewsState[id];
+            st.index = (st.index + 1) % st.images.length;
+            cnUpdate(id);
+        }
+
+        // 라이트박스 (확대보기)
+        const lightboxState = { items: [], index: 0 };
+
+        function updateLightboxImage() {
+            document.getElementById('lightbox-img').src = lightboxState.items[lightboxState.index];
+            document.getElementById('lightbox-counter').innerText = `${lightboxState.index + 1} / ${lightboxState.items.length}`;
+        }
+        function openLightbox(items, index) {
+            lightboxState.items = items;
+            lightboxState.index = index;
+            updateLightboxImage();
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        function lightboxPrev() {
+            lightboxState.index = (lightboxState.index - 1 + lightboxState.items.length) % lightboxState.items.length;
+            updateLightboxImage();
+        }
+        function lightboxNext() {
+            lightboxState.index = (lightboxState.index + 1) % lightboxState.items.length;
+            updateLightboxImage();
+        }
+        function lbOpen(items, index, evt) {
+            if (evt) evt.stopPropagation();
+            openLightbox(items, index);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const lb = document.getElementById('lightbox');
+            if (lb.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lightboxPrev();
+            if (e.key === 'ArrowRight') lightboxNext();
+        });
+
+        // 터치 스와이프 (카카오톡 인앱 브라우저 등 모바일 대응)
+        let lbTouchStartX = 0;
+        let lbTouchStartY = 0;
+        function lbTouchStart(e) {
+            const t = e.touches[0];
+            lbTouchStartX = t.screenX;
+            lbTouchStartY = t.screenY;
+        }
+        function lbTouchMove(e) {
+            e.preventDefault();
+        }
+        function lbTouchEnd(e) {
+            const t = e.changedTouches[0];
+            const dx = t.screenX - lbTouchStartX;
+            const dy = t.screenY - lbTouchStartY;
+            if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+                if (dx > 0) { lightboxPrev(); } else { lightboxNext(); }
+            }
+        }
+        const lightboxEl = document.getElementById('lightbox');
+        const lightboxImgEl = document.getElementById('lightbox-img');
+        [lightboxEl, lightboxImgEl].forEach(el => {
+            el.addEventListener('touchstart', lbTouchStart, { passive: true });
+            el.addEventListener('touchmove', lbTouchMove, { passive: false });
+            el.addEventListener('touchend', lbTouchEnd, { passive: true });
+        });
+    </script>
 
 </body>
 </html>
