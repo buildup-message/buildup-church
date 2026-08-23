@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026년 8월 23일 주일예배 | 인터넷 주보 | 빌드업교회</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; background-color: #faf6ec; }
+        .item-card { background: #fffdf7; border: 1px solid #ece3d1; border-top: 3px solid #c9a06a; }
+        .ppt-gallery { scrollbar-width: thin; }
+        .ppt-gallery img { scroll-snap-align: start; }
+        .ppt-gallery { scroll-snap-type: x proximity; }
+    </style>
+</head>
+<body class="text-[#332c22] flex flex-col min-h-screen">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="../../index.html" class="text-xl font-bold text-[#1f4a34] flex items-center gap-2">
+                    <span>빌드업교회</span>
+                </a>
+                <div class="flex items-center space-x-4 text-sm font-semibold">
+                    <a href="../index.html" class="text-[#7c7260] hover:text-[#1f4a34] transition flex items-center gap-1">
+                        <i class="fas fa-list-ul"></i> 주보 목록
+                    </a>
+                    <a href="../../index.html" class="text-[#7c7260] hover:text-[#1f4a34] transition hidden sm:inline-block">
+                        교회 홈
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-2xl mx-auto px-4 pt-28 pb-16 flex-grow w-full">
+        <div class="mb-6">
+            <a href="../index.html" class="text-sm text-[#a89b84] hover:text-[#1f4a34] transition"><i class="fas fa-arrow-left mr-1"></i> 주보 목록으로</a>
+        </div>
+
+        <div class="text-center mb-11">
+            <span class="inline-block bg-[#cfe0d2] text-[#1f4a34] text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wide">주일예배</span>
+            <h1 class="text-2xl md:text-3xl font-bold mb-2 break-keep">2026년 8월 23일 주일예배</h1>
+            <p class="text-[#a89b84] text-sm">설교: 지키던 것으로 하나님과의 숨바꼭질 · 황성현 목사</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">1. 예배의 부름</h2>
+                <p class="break-keep">다같이 묵도한 후, 인도자의 기도로 예배를 시작합니다.</p>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">2. 찬양</h2>
+                <ul class="list-disc list-inside space-y-1 break-keep">
+                    <li><a href="https://www.youtube.com/watch?v=7i4HqI-2brE" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">충만</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=-q87el_HPBY" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">부흥 (이 땅의 황무함을 보소서)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=r_tRz0x0HBE" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">찬양하세</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=as4mBR5zPXA" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">살아계신 주 (주 하나님 독생자 예수)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=cldej0CnbVA" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">예수 우리 왕이여</a></li>
+                </ul>
+                <p class="text-[#a89b84] italic text-sm mt-4 mb-2">찬양 악보 (총 7장 · 결단찬양 포함 · 옆으로 스크롤해서 보실 수 있습니다)</p>
+                <div class="flex gap-3 overflow-x-auto pb-2">
+                    <button type="button" onclick="lbOpen(worshipSheets, 0, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양1.jpg" alt="찬양 악보 1 - 충만" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 1, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양2.jpg" alt="찬양 악보 2 - 부흥" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 2, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양3.jpg" alt="찬양 악보 3 - 살아계신 주" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 3, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양4.jpg" alt="찬양 악보 4 - 찬양하세" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 4, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양5.jpg" alt="찬양 악보 5 - 예수 우리 왕이여" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 5, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양6.jpg" alt="찬양 악보 6 - 나 주의 도움 받고자" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 6, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양7.jpg" alt="찬양 악보 7 - 살아계신 성령님" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                </div>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <div class="flex justify-between items-baseline gap-3">
+                    <h2 class="text-lg font-extrabold text-[#1f4a34]">3. 대표기도</h2>
+                    <span class="text-base font-bold text-[#332c22] whitespace-nowrap">최다엘 어린이</span>
+                </div>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">4. 광고</h2>
+                <ul class="list-disc list-inside space-y-1 break-keep">
+                    <li>주일예배는 오전 11시입니다.</li>
+                    <li>10분 전부터 찬양이 시작됩니다.</li>
+                    <li>금요성경모임이 금요일 저녁 7시 30분에 있습니다.</li>
+                </ul>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">5. 성경봉독</h2>
+                <p class="text-sm font-bold text-[#7c7260] mb-2">창세기 3:7-13 (개역개정)</p>
+                <blockquote class="border-l-[3px] border-[#cfe0d2] pl-4 italic break-keep space-y-1.5">
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">7</sup>이에 그들의 눈이 밝아져 자기들이 벗은 줄을 알고 무화과나무 잎을 엮어 치마로 삼았더라</p>
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">8</sup>그들이 그 날 바람이 불 때 동산에 거니시는 여호와 하나님의 소리를 듣고 아담과 그의 아내가 여호와 하나님의 낯을 피하여 동산 나무 사이에 숨은지라</p>
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">9</sup>여호와 하나님이 아담을 부르시며 그에게 이르시되 네가 어디 있느냐</p>
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">10</sup>이르되 내가 동산에서 하나님의 소리를 듣고 내가 벗었으므로 두려워하여 숨었나이다</p>
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">11</sup>이르시되 누가 너의 벗었음을 네게 알렸느냐 내가 네게 먹지 말라 명한 그 나무 열매를 네가 먹었느냐</p>
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">12</sup>아담이 이르되 하나님이 주셔서 나와 함께 있게 하신 여자 그가 그 나무 열매를 내게 주므로 내가 먹었나이다</p>
+                    <p><sup class="not-italic font-bold text-[#1f4a34] mr-1">13</sup>여호와 하나님이 여자에게 이르시되 네가 어찌하여 이렇게 하였느냐 여자가 이르되 뱀이 나를 꾀므로 내가 먹었나이다</p>
+                </blockquote>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <h2 class="text-lg font-extrabold text-[#1f4a34] mb-2">6. 설교</h2>
+                <p class="text-xl font-extrabold mb-1 break-keep">지키던 것으로 하나님과의 숨바꼭질</p>
+                <p class="text-[#7c7260] text-sm">설교자: 황성현 목사</p>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">7. 결단찬양</h2>
+                <ul class="list-disc list-inside space-y-1 break-keep">
+                    <li><a href="https://www.youtube.com/watch?v=AyUUhpLHuxg" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">나 주의 도움 받고자</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4bCDvZpghLs" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">살아계신 성령님</a></li>
+                </ul>
+                <p class="text-[#a89b84] text-xs mt-2">악보는 위 2번 찬양 악보 6~7번째 장에 있습니다.</p>
+            </section>
+
+            <section class="item-card rounded-2xl p-6 shadow-sm">
+                <div class="flex justify-between items-baseline gap-3">
+                    <h2 class="text-lg font-extrabold text-[#1f4a34]">8. 축도</h2>
+                    <span class="text-xs text-[#a89b84] whitespace-nowrap">황성현 목사</span>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="mt-10 border border-dashed border-[#c9a06a] rounded-2xl px-6 py-4 text-sm text-[#7c7260] flex flex-wrap gap-x-6 gap-y-1">
+            <span>📌 <strong class="text-[#332c22]">다음 주 섬김이</strong></span>
+            <span>대표기도 — <strong class="text-[#332c22]">현하진 어린이</strong></span>
+            <span>안내 — <strong class="text-[#332c22]">최업병 집사</strong></span>
+        </div>
+
+        <div class="mt-12 pt-6 border-t border-[#ece3d1]">
+            <a href="../index.html" class="inline-flex items-center gap-2 text-[#1f4a34] font-semibold hover:opacity-75 transition">
+                <i class="fas fa-arrow-left"></i> 주보 목록으로
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-[#24321f] text-[#b9c2a8] py-8 text-center text-sm mt-auto">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-lg font-bold text-white mb-1">빌드업교회</h2>
+            <p class="text-xs text-[#8a917d]">&copy; 2026 Build-Up Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center" onclick="if(event.target===this) closeLightbox()" style="touch-action: none;">
+        <button onclick="closeLightbox()" class="absolute top-4 right-5 text-white text-4xl leading-none" aria-label="닫기">&times;</button>
+        <button onclick="lightboxPrev()" class="absolute left-2 md:left-6 text-white text-5xl leading-none px-2 select-none" aria-label="이전">&#8249;</button>
+        <img id="lightbox-img" src="" alt="" class="max-h-[88vh] max-w-[90vw] rounded-lg shadow-2xl" style="touch-action: none;">
+        <button onclick="lightboxNext()" class="absolute right-2 md:right-6 text-white text-5xl leading-none px-2 select-none" aria-label="다음">&#8250;</button>
+    </div>
+
+    <script>
+        const worshipSheets = ["images/찬양콘티/찬양1.jpg", "images/찬양콘티/찬양2.jpg", "images/찬양콘티/찬양3.jpg", "images/찬양콘티/찬양4.jpg", "images/찬양콘티/찬양5.jpg", "images/찬양콘티/찬양6.jpg", "images/찬양콘티/찬양7.jpg"];
+
+        let lightboxItems = [];
+        let lightboxIndex = 0;
+
+        function openLightbox(items, index) {
+            lightboxItems = items;
+            lightboxIndex = index;
+            updateLightboxImage();
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 갤러리의 <a href="이미지경로"> 클릭 시 호출. 라이트박스를 띄우고 링크 이동은 막는다.
+        // 만약 어떤 이유로든 이 스크립트가 실행되지 않는 브라우저(예: 일부 인앱 브라우저)라면
+        // onclick 자체가 무시되고 <a href>가 그대로 동작해 이미지 원본이 새로 열리므로,
+        // 라이트박스가 안 뜨더라도 "눌러서 확대해서 보기"는 항상 되도록 이중 안전장치를 둔다.
+        function lbOpen(items, index, evt) {
+            openLightbox(items, index);
+            if (evt) evt.preventDefault();
+            return false;
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightboxImage() {
+            document.getElementById('lightbox-img').src = lightboxItems[lightboxIndex];
+        }
+
+        function lightboxPrev() {
+            lightboxIndex = (lightboxIndex - 1 + lightboxItems.length) % lightboxItems.length;
+            updateLightboxImage();
+        }
+
+        function lightboxNext() {
+            lightboxIndex = (lightboxIndex + 1) % lightboxItems.length;
+            updateLightboxImage();
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (document.getElementById('lightbox').classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lightboxPrev();
+            if (e.key === 'ArrowRight') lightboxNext();
+        });
+
+        // 모바일에서 확대된 사진을 손가락으로 좌우로 밀어서(스와이프) 넘길 수 있게 함.
+        // 브라우저 자체의 확대/이동(핀치줌·팬) 제스처가 스와이프를 가로채지 못하도록
+        // touchmove에서 preventDefault로 기본 동작을 명시적으로 막는다(passive:false 필수).
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchMoved = false;
+        const lightboxEl = document.getElementById('lightbox');
+        const lightboxImgEl = document.getElementById('lightbox-img');
+
+        function lbTouchStart(e) {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+            touchMoved = false;
+        }
+
+        function lbTouchMove(e) {
+            touchMoved = true;
+            e.preventDefault();
+        }
+
+        function lbTouchEnd(e) {
+            if (!touchMoved) return;
+            const dx = e.changedTouches[0].screenX - touchStartX;
+            const dy = e.changedTouches[0].screenY - touchStartY;
+            if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return; // 세로 스크롤/짧은 터치는 무시
+            if (dx > 0) {
+                lightboxPrev();
+            } else {
+                lightboxNext();
+            }
+        }
+
+        [lightboxEl, lightboxImgEl].forEach(function (el) {
+            el.addEventListener('touchstart', lbTouchStart, { passive: true });
+            el.addEventListener('touchmove', lbTouchMove, { passive: false });
+            el.addEventListener('touchend', lbTouchEnd, { passive: true });
+        });
+    </script>
+</body>
+</html>
