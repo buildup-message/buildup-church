@@ -93,11 +93,44 @@
                 <p class="text-sm text-gray-500 mt-1">카드뉴스와 설교 영상을 최신순으로 정리했습니다.</p>
             </div>
             <span class="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold border border-indigo-100">
-                총 11건
+                총 12건
             </span>
         </div>
 
         <div class="space-y-10">
+
+            <!-- 2026.08.30 -->
+            <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
+                <div class="mb-4">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">2026.08.30</span>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-3">다친 데는 없니</h3>
+                    <p class="text-sm text-gray-500 mt-1"><i class="fas fa-bible mr-1 text-amber-600"></i> 창세기 3:14-19</p>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-gray-500 mb-2">카드뉴스로 보기 (눌러서 확대 · 확대 후 좌우로 넘기기)</p>
+                    <div class="relative max-w-sm mx-auto bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-200 cn-carousel">
+                        <button type="button" onclick="lbOpen(cardNewsState['2026-08-30'].images, cardNewsState['2026-08-30'].index, event)" class="block w-full h-full p-0 border-0 bg-transparent cursor-zoom-in">
+                            <img id="cn-img-2026-08-30" src="images/cardnews/2026-08-30/카드뉴스_1.jpg" alt="다친 데는 없니 카드뉴스" class="w-full h-full object-contain">
+                        </button>
+                        <button type="button" onclick="cnPrev('2026-08-30')" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10" aria-label="이전 카드뉴스">
+                            <i class="fas fa-chevron-left text-sm"></i>
+                        </button>
+                        <button type="button" onclick="cnNext('2026-08-30')" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10" aria-label="다음 카드뉴스">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </button>
+                        <div id="cn-counter-2026-08-30" class="absolute bottom-2 right-2 text-xs font-bold px-2.5 py-1 bg-black/50 text-white rounded-full backdrop-blur-sm">1 / 13</div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <p class="text-xs font-bold text-gray-500 mb-2">설교 영상</p>
+                    <div class="video-container shadow-md border border-gray-200">
+                        <iframe src="https://www.youtube-nocookie.com/embed/QV5RkqXjvjY" title="2026.08.30 다친 데는 없니" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <a href="../devotions/2026-08-30/index.html" class="inline-flex items-center gap-1 text-sm text-indigo-600 font-semibold mt-4 hover:text-indigo-800 transition">
+                    이 주의 묵상 보기 <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </article>
 
             <!-- 2026.08.23 -->
             <article class="bg-white rounded-2xl p-6 md:p-8 card-shadow border border-gray-100">
@@ -373,6 +406,10 @@
     <script>
         // 주차별 카드뉴스 이미지 목록
         const cardNewsState = {
+            '2026-08-30': {
+                images: [1,2,3,4,5,6,7,8,9,10,11,12,13].map(n => `images/cardnews/2026-08-30/카드뉴스_${n}.jpg`),
+                index: 0
+            },
             '2026-08-23': {
                 images: [1,2,3,4,5,6,7,8,9,10,11,12,13].map(n => `images/cardnews/2026-08-23/카드뉴스_${n}.jpg`),
                 index: 0
