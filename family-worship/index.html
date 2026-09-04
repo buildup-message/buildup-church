@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인터넷 주보 | 빌드업교회</title>
+    <title>가정예배 | 빌드업교회</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <style>
         body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; background-color: #faf6ec; }
         .hero-bg {
-            background-image: linear-gradient(rgba(31, 74, 52, 0.75), rgba(31, 74, 52, 0.75)), url('https://images.unsplash.com/photo-1445810694374-0a94739e4a03?q=80&w=2070&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(31, 74, 52, 0.75), rgba(31, 74, 52, 0.75)), url('https://images.unsplash.com/photo-1543342384-1f1350e27861?q=80&w=2070&auto=format&fit=crop');
             background-size: cover; background-position: center;
         }
-        .bulletin-card { background: #fffdf7; border: 1px solid #ece3d1; border-top: 3px solid #c9a06a; }
+        .worship-card { background: #fffdf7; border: 1px solid #ece3d1; border-top: 3px solid #c9a06a; }
     </style>
 </head>
 <body class="text-[#332c22] flex flex-col min-h-screen">
@@ -33,9 +33,9 @@
                     <a href="../index.html#education" class="hover:text-[#1f4a34] transition">교육과 훈련</a>
                     <a href="../index.html#community" class="hover:text-[#1f4a34] transition">공동체 및 소식</a>
                     <a href="../sermons/index.html" class="hover:text-[#1f4a34] transition">주일설교 영상</a>
-                    <a href="index.html" class="text-[#1f4a34] font-bold">인터넷 주보</a>
+                    <a href="../bulletin/index.html" class="hover:text-[#1f4a34] transition">인터넷 주보</a>
                     <a href="../devotions/index.html" class="hover:text-[#1f4a34] transition">주간 묵상</a>
-                    <a href="../family-worship/index.html" class="hover:text-[#1f4a34] transition">가정예배</a>
+                    <a href="index.html" class="text-[#1f4a34] font-bold">가정예배</a>
                     <a href="../bible-study/index.html" class="hover:text-[#1f4a34] transition">금요성경공부</a>
                     <a href="../column/index.html" class="hover:text-[#1f4a34] transition">목회칼럼</a>
                 </div>
@@ -46,9 +46,9 @@
                 <a href="../index.html#education" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">교육과 훈련</a>
                 <a href="../index.html#community" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">공동체 및 소식</a>
                 <a href="../sermons/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">주일설교 영상</a>
-                <a href="index.html" onclick="closeMobileMenu()" class="block py-2 text-[#1f4a34] font-bold">인터넷 주보</a>
+                <a href="../bulletin/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">인터넷 주보</a>
                 <a href="../devotions/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">주간 묵상</a>
-                <a href="../family-worship/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">가정예배</a>
+                <a href="index.html" onclick="closeMobileMenu()" class="block py-2 text-[#1f4a34] font-bold">가정예배</a>
                 <a href="../bible-study/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">금요성경공부</a>
                 <a href="../column/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">목회칼럼</a>
             </div>
@@ -69,56 +69,20 @@
     </script>
 
     <header class="hero-bg h-[32vh] flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-white text-3xl md:text-4xl font-bold mb-2">인터넷 주보</h1>
-        <p class="text-white/80 text-sm md:text-base">매주 주일예배 순서를 여기서 보실 수 있습니다</p>
+        <h1 class="text-white text-3xl md:text-4xl font-bold mb-2">가정예배</h1>
+        <p class="text-white/80 text-sm md:text-base">주일설교와 같은 마음을 담아, 가족이 함께 드리는 예배 순서지입니다</p>
     </header>
 
     <main class="max-w-3xl mx-auto px-4 py-16 flex-grow w-full">
         <div class="grid gap-5">
 
-            <a href="2026-08-30/index.html" class="bulletin-card rounded-2xl p-6 shadow-sm hover:shadow-md transition block">
+            <a href="2026-08-30/index.html" class="worship-card rounded-2xl p-6 shadow-sm hover:shadow-md transition block">
                 <div class="flex items-center gap-2 mb-2">
-                    <span class="bg-[#cfe0d2] text-[#1f4a34] text-xs font-bold px-3 py-1 rounded-full">주일예배</span>
-                    <span class="text-xs text-[#a89b84]"><i class="far fa-calendar-alt mr-1"></i>2026.08.30</span>
+                    <span class="bg-[#cfe0d2] text-[#1f4a34] text-xs font-bold px-3 py-1 rounded-full">가정예배</span>
+                    <span class="text-xs text-[#a89b84]"><i class="far fa-calendar-alt mr-1"></i>2026.08.30 주간</span>
                 </div>
                 <h2 class="text-lg font-bold mb-1 break-keep">다친 데는 없어?</h2>
-                <p class="text-sm text-[#7c7260] mb-3">설교자: 황성현 목사</p>
-                <span class="inline-flex items-center gap-1 text-[#1f4a34] text-sm font-semibold group">
-                    자세히 보기 <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                </span>
-            </a>
-
-            <a href="2026-08-23/index.html" class="bulletin-card rounded-2xl p-6 shadow-sm hover:shadow-md transition block">
-                <div class="flex items-center gap-2 mb-2">
-                    <span class="bg-[#cfe0d2] text-[#1f4a34] text-xs font-bold px-3 py-1 rounded-full">주일예배</span>
-                    <span class="text-xs text-[#a89b84]"><i class="far fa-calendar-alt mr-1"></i>2026.08.23</span>
-                </div>
-                <h2 class="text-lg font-bold mb-1 break-keep">지키던 것으로 하나님과의 숨바꼭질</h2>
-                <p class="text-sm text-[#7c7260] mb-3">설교자: 황성현 목사</p>
-                <span class="inline-flex items-center gap-1 text-[#1f4a34] text-sm font-semibold group">
-                    자세히 보기 <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                </span>
-            </a>
-
-            <a href="2026-08-16/index.html" class="bulletin-card rounded-2xl p-6 shadow-sm hover:shadow-md transition block">
-                <div class="flex items-center gap-2 mb-2">
-                    <span class="bg-[#cfe0d2] text-[#1f4a34] text-xs font-bold px-3 py-1 rounded-full">주일예배</span>
-                    <span class="text-xs text-[#a89b84]"><i class="far fa-calendar-alt mr-1"></i>2026.08.16</span>
-                </div>
-                <h2 class="text-lg font-bold mb-1 break-keep">그리스도인답게 결정하기(선악과 앞에서의 선택)</h2>
-                <p class="text-sm text-[#7c7260] mb-3">설교자: 황성현 목사</p>
-                <span class="inline-flex items-center gap-1 text-[#1f4a34] text-sm font-semibold group">
-                    자세히 보기 <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                </span>
-            </a>
-
-            <a href="2026-08-09/index.html" class="bulletin-card rounded-2xl p-6 shadow-sm hover:shadow-md transition block">
-                <div class="flex items-center gap-2 mb-2">
-                    <span class="bg-[#cfe0d2] text-[#1f4a34] text-xs font-bold px-3 py-1 rounded-full">주일예배</span>
-                    <span class="text-xs text-[#a89b84]"><i class="far fa-calendar-alt mr-1"></i>2026.08.09</span>
-                </div>
-                <h2 class="text-lg font-bold mb-1 break-keep">놓치기 쉬운 기독교의 핵심 진리</h2>
-                <p class="text-sm text-[#7c7260] mb-3">설교자: 황을호 교수</p>
+                <p class="text-sm text-[#7c7260] mb-3">누가복음 15:11-24 · 잃어버린 아들</p>
                 <span class="inline-flex items-center gap-1 text-[#1f4a34] text-sm font-semibold group">
                     자세히 보기 <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
                 </span>
