@@ -27,30 +27,46 @@
                     </button>
                     <a href="../index.html" class="text-2xl font-bold text-[#1f4a34]">빌드업교회</a>
                 </div>
-                <div class="hidden md:flex space-x-6 text-sm font-semibold">
+                <div class="hidden md:flex items-center space-x-6 text-sm font-semibold">
                     <a href="../index.html#about" class="hover:text-[#1f4a34] transition">교회 소개</a>
                     <a href="../index.html#worship" class="hover:text-[#1f4a34] transition">예배와 말씀</a>
-                    <a href="../index.html#education" class="hover:text-[#1f4a34] transition">교육과 훈련</a>
-                    <a href="../index.html#community" class="hover:text-[#1f4a34] transition">공동체 및 소식</a>
-                    <a href="../sermons/index.html" class="hover:text-[#1f4a34] transition">주일설교 영상</a>
-                    <a href="index.html" class="text-[#1f4a34] font-bold">인터넷 주보</a>
-                    <a href="../devotions/index.html" class="hover:text-[#1f4a34] transition">주간 묵상</a>
-                    <a href="../family-worship/index.html" class="hover:text-[#1f4a34] transition">가정예배</a>
-                    <a href="../bible-study/index.html" class="hover:text-[#1f4a34] transition">금요성경공부</a>
-                    <a href="../column/index.html" class="hover:text-[#1f4a34] transition">목회칼럼</a>
+                    <div class="relative group">
+                        <button class="text-[#1f4a34] font-bold flex items-center gap-1">말씀자료 <i class="fas fa-chevron-down text-[10px]"></i></button>
+                        <div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+                            <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2 w-40">
+                                <a href="../sermons/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">주일설교 영상</a>
+                                <a href="index.html" class="block px-4 py-2 text-[#1f4a34] font-bold bg-gray-50">인터넷 주보</a>
+                                <a href="../devotions/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">주간 묵상</a>
+                                <a href="../family-worship/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">가정예배</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="hover:text-[#1f4a34] transition flex items-center gap-1">교육과 공동체 <i class="fas fa-chevron-down text-[10px]"></i></button>
+                        <div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+                            <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2 w-40">
+                                <a href="../index.html#education" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">교육과 훈련</a>
+                                <a href="../bible-study/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">금요성경공부</a>
+                                <a href="../column/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">목회칼럼</a>
+                                <a href="../index.html#community" class="block px-4 py-2 hover:bg-gray-50 hover:text-[#1f4a34] transition">공동체 및 소식</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="mobile-menu" class="hidden md:hidden flex-col space-y-1 pb-4 text-sm font-semibold border-t border-gray-100 pt-3">
                 <a href="../index.html#about" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">교회 소개</a>
                 <a href="../index.html#worship" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">예배와 말씀</a>
-                <a href="../index.html#education" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">교육과 훈련</a>
-                <a href="../index.html#community" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">공동체 및 소식</a>
-                <a href="../sermons/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">주일설교 영상</a>
-                <a href="index.html" onclick="closeMobileMenu()" class="block py-2 text-[#1f4a34] font-bold">인터넷 주보</a>
-                <a href="../devotions/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">주간 묵상</a>
-                <a href="../family-worship/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">가정예배</a>
-                <a href="../bible-study/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">금요성경공부</a>
-                <a href="../column/index.html" onclick="closeMobileMenu()" class="block py-2 hover:text-[#1f4a34] transition">목회칼럼</a>
+                <div class="pt-2 pb-1 text-xs text-gray-400 font-bold">말씀자료</div>
+                <a href="../sermons/index.html" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">주일설교 영상</a>
+                <a href="index.html" onclick="closeMobileMenu()" class="block py-2 pl-3 text-[#1f4a34] font-bold">인터넷 주보</a>
+                <a href="../devotions/index.html" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">주간 묵상</a>
+                <a href="../family-worship/index.html" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">가정예배</a>
+                <div class="pt-2 pb-1 text-xs text-gray-400 font-bold">교육과 공동체</div>
+                <a href="../index.html#education" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">교육과 훈련</a>
+                <a href="../bible-study/index.html" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">금요성경공부</a>
+                <a href="../column/index.html" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">목회칼럼</a>
+                <a href="../index.html#community" onclick="closeMobileMenu()" class="block py-2 pl-3 hover:text-[#1f4a34] transition">공동체 및 소식</a>
             </div>
         </div>
     </nav>
@@ -74,6 +90,7 @@
     </header>
 
     <main class="max-w-3xl mx-auto px-4 py-16 flex-grow w-full">
+        <p class="text-sm text-[#a89b84] mb-6">총 6건의 주보가 있습니다.</p>
         <div class="grid gap-5">
 
             <a href="2026-09-13/index.html" class="bulletin-card rounded-2xl p-6 shadow-sm hover:shadow-md transition block">
