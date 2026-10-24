@@ -47,7 +47,17 @@
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
                 <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">1. 찬양</h2>
-                <p class="text-[#a89b84] italic text-sm">찬양 곡목과 악보는 준비되는 대로 추가하겠습니다.</p>
+                <ul class="list-disc list-inside space-y-1 break-keep">
+                    <li><a href="https://youtu.be/xUqNvOZu_ig?si=vVdgv8Wde7j_01J_" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">슬픈 마음 있는 사람</a></li>
+                    <li><a href="https://youtu.be/h5lIpaMcNdE?si=tN3rUn6U2MG0krnm" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">예수 열방의 소망</a></li>
+                    <li><a href="https://youtu.be/Qek0xGCTCIc?si=FhQj4SPbj6OndMIo" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">나는 믿네</a></li>
+                </ul>
+                <p class="text-[#a89b84] italic text-sm mt-4 mb-2">찬양 악보 (총 3장 · 옆으로 스크롤해서 보실 수 있습니다)</p>
+                <div class="flex gap-3 overflow-x-auto pb-2">
+                    <button type="button" onclick="lbOpen(worshipSheets, 0, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양1.jpg" alt="찬양 악보 1 - 슬픈 마음 있는 사람" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 1, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양2.jpg" alt="찬양 악보 2 - 예수 열방의 소망" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 2, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양3.jpg" alt="찬양 악보 3 - 나는 믿네" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                </div>
             </section>
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
@@ -157,7 +167,7 @@
     </div>
 
     <script>
-        const worshipSheets = [];
+        const worshipSheets = ["images/찬양콘티/찬양1.jpg", "images/찬양콘티/찬양2.jpg", "images/찬양콘티/찬양3.jpg"];
 
         let lightboxItems = [];
         let lightboxIndex = 0;
