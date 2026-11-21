@@ -47,7 +47,17 @@
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
                 <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">1. 찬양</h2>
-                <p class="text-[#a89b84] italic text-sm">준비되는 대로 추가하겠습니다.</p>
+                <ul class="list-disc list-inside space-y-1 break-keep">
+                    <li><a href="https://youtu.be/3KPUSq4gj8s" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">하나님의 은혜</a></li>
+                    <li><a href="https://youtu.be/TyC4rhee2S8" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">주님 말씀하시면</a></li>
+                    <li><a href="https://youtu.be/aaSrOtDIMdg" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-[#1f4a34]">내게 있는 모든 것을</a></li>
+                </ul>
+                <p class="text-[#a89b84] italic text-sm mt-4 mb-2">찬양 악보 (총 3장 · 옆으로 스크롤해서 보실 수 있습니다)</p>
+                <div class="flex gap-3 overflow-x-auto pb-2">
+                    <button type="button" onclick="lbOpen(worshipSheets, 0, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양1.jpg" alt="찬양 악보 1 - 하나님의 은혜" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 1, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양2.jpg" alt="찬양 악보 2 - 주님 말씀하시면" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                    <button type="button" onclick="lbOpen(worshipSheets, 2, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양3.jpg" alt="찬양 악보 3 - 내게 있는 모든 것을" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button>
+                </div>
             </section>
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
@@ -65,7 +75,9 @@
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
                 <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">4. 찬송</h2>
-                <p class="text-[#a89b84] italic text-sm">준비되는 대로 추가하겠습니다.</p>
+                <p class="break-keep mb-3">찬송가 10장 <span class="font-bold">"전능왕 오셔서"</span></p>
+                <a href="https://youtu.be/lb6ZWhitJOE" target="_blank" rel="noopener" class="text-sm text-[#a1754a] underline decoration-dotted hover:text-[#1f4a34]">유튜브에서 듣기 <i class="fas fa-arrow-up-right-from-square text-xs"></i></a>
+                <div class="mt-3"><button type="button" onclick="lbOpen(['images/찬양콘티/찬양4.jpg'], 0, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양4.jpg" alt="찬송가 10장 악보" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button></div>
             </section>
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
@@ -113,7 +125,7 @@
                 <h2 class="text-lg font-extrabold text-[#1f4a34] mb-3">8. 파송찬양</h2>
                 <p class="break-keep mb-3"><span class="font-bold">축복 (The Blessing)</span></p>
                 <a href="https://youtu.be/mDK9ZrhJA34?si=sKJeJ02u-3lj1vxW" target="_blank" rel="noopener" class="text-sm text-[#a1754a] underline decoration-dotted hover:text-[#1f4a34]">유튜브에서 듣기 <i class="fas fa-arrow-up-right-from-square text-xs"></i></a>
-                <p class="text-[#a89b84] italic text-sm mt-3">악보는 준비되는 대로 추가하겠습니다.</p>
+                <div class="mt-3"><button type="button" onclick="lbOpen(['images/찬양콘티/찬양5.jpg'], 0, event)" class="flex-none block p-0 border-0 bg-transparent"><img src="images/찬양콘티/찬양5.jpg" alt="축복 악보" loading="lazy" class="h-64 w-auto rounded-lg border border-[#ece3d1] shadow-sm flex-none"></button></div>
             </section>
 
             <section class="item-card rounded-2xl p-6 shadow-sm">
@@ -140,7 +152,7 @@
     </div>
 
     <script>
-        const worshipSheets = [];
+        const worshipSheets = ["images/찬양콘티/찬양1.jpg", "images/찬양콘티/찬양2.jpg", "images/찬양콘티/찬양3.jpg"];
 
         let lightboxItems = [];
         let lightboxIndex = 0;
