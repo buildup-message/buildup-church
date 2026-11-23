@@ -241,21 +241,37 @@
                         <h4 class="text-2xl font-bold text-indigo-900">주간 묵상 & 소식</h4>
                         <a href="devotions/index.html" class="text-sm text-indigo-600 hover:underline">더보기+</a>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm divide-y">
-                        <!-- 게시판 글 목록 예시 -->
-                        <a href="devotions/2026-08-02/index.html" class="p-4 flex justify-between hover:bg-gray-50 transition cursor-pointer">
-                            <span class="font-medium text-indigo-900 hover:text-indigo-600">[주간 묵상] 목적이 뭐야2?</span>
-                            <span class="text-gray-400 text-sm">2026.08.02</span>
+                    <!-- 최신 글은 아래 스크립트가 각 목록 페이지에서 자동으로 읽어 온다 (아래 링크는 스크립트가 안 돌 때의 대체본) -->
+                    <div id="latest-posts" class="bg-white rounded-lg shadow-sm divide-y">
+                        <a href="devotions/2026-11-22/index.html" class="p-4 flex justify-between hover:bg-gray-50 transition">
+                            <span class="font-medium text-indigo-900 hover:text-indigo-600">[주간 묵상] 말씀하실 때까지</span>
+                            <span class="text-gray-400 text-sm">2026.11.22</span>
                         </a>
-                        <div class="p-4 flex justify-between hover:bg-gray-50 transition cursor-pointer">
-                            <span class="font-medium">[공지] 다음 세대 독서 모임 모집</span>
-                            <span class="text-gray-400 text-sm">2026.06.05</span>
-                        </div>
-                        <div class="p-4 flex justify-between hover:bg-gray-50 transition cursor-pointer">
-                            <span class="font-medium">[주보] 6월 셋째 주 온라인 주보</span>
-                            <span class="text-gray-400 text-sm">2026.06.01</span>
-                        </div>
+                        <a href="bulletin/2026-11-22/index.html" class="p-4 flex justify-between hover:bg-gray-50 transition">
+                            <span class="font-medium text-indigo-900 hover:text-indigo-600">[주보] 11월 22일 인터넷 주보</span>
+                            <span class="text-gray-400 text-sm">2026.11.22</span>
+                        </a>
+                        <a href="family-worship/2026-11-22/index.html" class="p-4 flex justify-between hover:bg-gray-50 transition">
+                            <span class="font-medium text-indigo-900 hover:text-indigo-600">[가정예배] 11월 22일 가정예배서</span>
+                            <span class="text-gray-400 text-sm">2026.11.22</span>
+                        </a>
                     </div>
+                    <script>
+                    (async () => {
+                        const src = [['devotions', '주간 묵상'], ['bulletin', '주보'], ['family-worship', '가정예배']];
+                        const rows = await Promise.all(src.map(async ([dir, tag]) => {
+                            try {
+                                const html = await (await fetch(dir + '/index.html', {cache: 'no-cache'})).text();
+                                const d = html.match(/href="(\d{4})-(\d{2})-(\d{2})\/index\.html"/);
+                                if (!d) return null;
+                                const t = html.match(new RegExp('href="' + d[1] + '-' + d[2] + '-' + d[3] + '/index\\.html">([^<]+)</a>'));
+                                const label = tag === '주간 묵상' && t ? t[1] : `${+d[2]}월 ${+d[3]}일 ${tag === '주보' ? '인터넷 주보' : '가정예배서'}`;
+                                return `<a href="${dir}/${d[1]}-${d[2]}-${d[3]}/index.html" class="p-4 flex justify-between hover:bg-gray-50 transition"><span class="font-medium text-indigo-900 hover:text-indigo-600">[${tag}] ${label}</span><span class="text-gray-400 text-sm">${d[1]}.${d[2]}.${d[3]}</span></a>`;
+                            } catch (e) { return null; }
+                        }));
+                        if (rows.every(Boolean)) document.getElementById('latest-posts').innerHTML = rows.join('');
+                    })();
+                    </script>
                 </div>
 
                 <!-- 갤러리 (행사 사진) -->
